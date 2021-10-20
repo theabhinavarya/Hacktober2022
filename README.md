@@ -46,7 +46,7 @@ You can refer to the following articles on the basics of Git and Github and also
 ### 1 . Fire  Particle Generator 
 
 <p align="center">
-    <a href="https://github.com/anjali1102"><img src="" /></a>
+    <a href="https://github.com/anjali1102"><img src="https://github.com/anjali1102/Hacktober2021/blob/master/Project%20Screenshots/Fire%20particle%20generator.png" /></a>
 </p>
 
 
