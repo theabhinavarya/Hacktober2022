@@ -33,18 +33,13 @@ You can refer to the following articles on the basics of Git and Github and also
 - Add Screenshots to help us know what this Script is all about.
 - Having difficulty in contributing? Read the [Contribution Guide](https://github.com/anjali1102/Hacktober2021/blob/main/CONTRIBUTING.md) for a detailed explanation.
 
+
 ## 💻 Languages used in this project
-<p align="center">
-<img height="200" width ="200" src = "https://github.com/PrathmeshMutke/Bundli-Frontend/blob/d905b07b9c2a0353d1a08f89a387654d85a21f3f/512px-HTML5_logo_and_wordmark.svg.png"></img>
-<img height="200" width ="200" src = "https://github.com/PrathmeshMutke/Bundli-Frontend/blob/d905b07b9c2a0353d1a08f89a387654d85a21f3f/CSS-Logo.png"></img>
-<img height="200" width ="200" src = "https://github.com/PrathmeshMutke/Bundli-Frontend/blob/d905b07b9c2a0353d1a08f89a387654d85a21f3f/javascript-logo-transparent-logo-javascript-images-3.png"></img>
-
-## 💻 Frameworks and libraries used in this project
 
 <p align="center">
-<img height="200" width ="200" src = "https://acumbamail.com/blog/wp-content/uploads/2014/10/maquetacion-email-html.png"></img>
-<img height="200" width ="200" src = "https://www.ostraining.com/cdn/images/oscampus/courses/CSS-part-1.jpg"></img>
-<img height="200" width ="200" src = "https://www.quickstart.com/pub/media/magefan_blog/Free_Courses_to_learn_JavaScript.jpg"></img>
+<img height="250" width ="250" src = "https://acumbamail.com/blog/wp-content/uploads/2014/10/maquetacion-email-html.png"></img>
+<img height="250" width ="250" src = "https://www.ostraining.com/cdn/images/oscampus/courses/CSS-part-1.jpg"></img>
+<img height="250" width ="250" src = "https://www.quickstart.com/pub/media/magefan_blog/Free_Courses_to_learn_JavaScript.jpg"></img>
 
 # Screenshots 
 
