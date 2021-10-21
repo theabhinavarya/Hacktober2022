@@ -1,4 +1,4 @@
-## Contributing
+## Steps to contribute 🤩
 
 **1.**  Fork [this](https://github.com/anjali1102/Hacktober2021.git) repository.
 
