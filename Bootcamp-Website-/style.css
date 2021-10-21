@@ -307,6 +307,11 @@ hr{
     cursor: pointer;
 }
 
+.social-icons img:hover{
+  transform: scale(1.7);
+  transition : 0.4s;
+}
+
 
 @media only screen and(max-width: 770px){
     #header{
