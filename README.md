@@ -14,14 +14,9 @@
 
 DevKit is open source collection of frontend project made with HTML, CSS, Javascript, React, APIs, Angular etc for uplifting Creative thinking over Binge watching tutorials.
 
-## ⭐ How to get started?
+    
+![Gif](https://user-images.githubusercontent.com/56559378/138270197-ef0e88a9-d2bf-4ef3-a413-d053acdec0a6.gif)
 
-You can refer to the following articles on the basics of Git and Github and also contact the Project Mentors, in case you are stuck:
-
-- [Forking a Repo](https://help.github.com/en/github/getting-started-with-github/fork-a-repo)
-- [Cloning a Repo](https://help.github.com/en/desktop/contributing-to-projects/creating-a-pull-request)
-- [How to create a Pull Request](https://opensource.com/article/19/7/create-pull-request-github)
-- [Getting started with Git and GitHub](https://towardsdatascience.com/getting-started-with-git-and-github-6fcd0f2d4ac6)
 
 ## 💥 How to Contribute?
 
@@ -33,6 +28,7 @@ You can refer to the following articles on the basics of Git and Github and also
 - Add Screenshots to help us know what this Script is all about.
 - Having difficulty in contributing? Read the [Contribution Guide](https://github.com/anjali1102/Hacktober2021/blob/main/CONTRIBUTING.md) for a detailed explanation.
 
+# Show some ❤️ by staring ⭐️ this repository.
 
 ## 💻 Languages used in this project
 
