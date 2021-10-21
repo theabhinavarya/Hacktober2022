@@ -60,5 +60,5 @@ DevKit is open source collection of frontend project made with HTML, CSS, Javasc
 ### 4 . CSS Animation
 
 <p align="center">
-    <a href="https://github.com/anjali1102"><img  height="500" width="500" src="https://github.com/anjali1102/Hacktober2021/blob/master/Project%20Screenshots/css%20svg%20animation.mp4" /></a>
+    <a href="https://github.com/anjali1102"><img  height="500" width="500" src="https://github.com/anjali1102/Hacktober2021/blob/master/Project%20Screenshots/css%20svg.png" /></a>
 </p>
