@@ -49,10 +49,15 @@ You can refer to the following articles on the basics of Git and Github and also
     <a href="https://github.com/anjali1102"><img  height="500" width="500" src="https://github.com/anjali1102/Hacktober2021/blob/master/Project%20Screenshots/Fire%20particle%20generator.png" /></a>
 </p>
 
-### 1 . Space Animation
+### 2 . Space Animation
 
 <p align="center">
     <a href="https://github.com/anjali1102"><img  height="500" width="500" src="https://github.com/anjali1102/Hacktober2021/blob/master/Project%20Screenshots/space-animation.gif" /></a>
 </p>
 
+### 3 . Brick Breaker
+
+<p align="center">
+    <a href="https://github.com/anjali1102"><img  height="500" width="500" src="https://github.com/anjali1102/Hacktober2021/blob/master/Project%20Screenshots/brick%20breaker%20ss.png" /></a>
+</p>
 
