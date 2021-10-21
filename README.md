@@ -1,7 +1,7 @@
 # Welcome To Hacktober 2021 👋
 
 
-**Devkit** is a open source project which contains different code of frontend Projects with HTML, CSS, JS, REACT, ANGULAR and APIs etc. which makes your life easier for learning frontend. You can submit your projects or raise/claim issues on existing projects.
+**Devkit** is a open source project which contains different code of frontend Projects with HTML, CSS, JS, REACT, ANGULAR and APIs etc. which makes your life easier for learning frontend. *You can submit your projects or raise/claim issues on existing projects*
 
 <p align="center">
     <a href="https://blog.shahednasser.com/how-to-participate-in-hacktoberfest-2021/"><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--wD1clxmJ--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/w0shqntyjc5vyfuyn5bg.png" />
