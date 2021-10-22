@@ -1,0 +1,104 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,900);
+
+// colors
+$green: #4caf50;
+$white: #fff;
+
+// base styles
+* {
+  box-sizing: border-box;
+  transition-property: all;
+  transition-duration: 0.6s;
+  transition-timing-function: ease;
+}
+
+body {
+  background: $white;
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  min-height: 100vh;
+}
+
+// toast
+.toast {
+  background-color: $green;
+  border-radius: 5px;
+  color: $white;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+// button wrap
+#container {
+  position: fixed;
+  bottom: 10px;
+  right: 5px;
+}
+
+a {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+// default button
+#btn {
+  color: $green;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 45px;
+  margin: 0 0 2em;
+  max-width: 160px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+  @media (min-width: 600px) {
+    margin: 0 1em 2em;
+  }
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+// button one
+.btn-1 {
+  background: darken($white, 1.5%);
+  font-weight: 100;
+
+  svg {
+    height: 45px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  rect {
+    fill: none;
+    stroke: $green;
+    stroke-width: 2;
+    stroke-dasharray: 422, 0;
+    transition: all 0.35s linear;
+  }
+}
+
+// button one hover
+.btn-1:hover {
+  background: rgba($white, 0);
+  font-weight: 900;
+  letter-spacing: 1px;
+
+  rect {
+    stroke-width: 5;
+    stroke-dasharray: 15, 310;
+    stroke-dashoffset: 48;
+    transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+}
