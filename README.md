@@ -67,3 +67,10 @@ DevKit is open source collection of frontend project made with HTML, CSS, Javasc
 <p align="center">
     <a href="https://github.com/anjali1102"><img  height="500" width="500" src="https://github.com/anjali1102/Hacktober2021/blob/master/Project%20Screenshots/resume-demo.png" /></a>
 </p>
+
+### 5 . Confetti Animation
+<p align="center">
+    <a href="https://github.com/anjali1102"><img  height="500" width="500" src="https://github.com/anjali1102/Hacktober2021/blob/master/Project%20Screenshots/confetti-animation.gif"
+/></a>
+</p>
+
