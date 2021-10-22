@@ -74,3 +74,9 @@ DevKit is open source collection of frontend project made with HTML, CSS, Javasc
 /></a>
 </p>
 
+### 6. Text Editor
+<p align="center">
+    <a href="https://github.com/anjali1102"><img  height="500" width="500" src="https://github.com/anjali1102/Hacktober2021/blob/master/Project%20Screenshots/team-editor-ss.png"
+/></a>
+</p>
+
