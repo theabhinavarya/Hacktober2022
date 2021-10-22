@@ -517,6 +517,16 @@ section{
 .color.activeOption~.container-4 .yellow{
   background-color: yellow;
 }
+.color.activeOption~.container-4 .brown{
+    background-color: brown;
+  }
+  .color.activeOption~.container-4 .orange{
+    background-color: orange;
+  }
+  .color.activeOption~.container-4 .pink{
+    background-color: pink;
+  }    
+
 .color.activeOption~.container-4 .blue{
   background-color: blue;
   margin-bottom: 1rem;
