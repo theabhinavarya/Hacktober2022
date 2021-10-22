@@ -16,7 +16,6 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-
     }
     .left {
       position: absolute;
@@ -107,6 +106,23 @@
         width: 58%;
         margin: 20px auto;
     }
+    .bmi-text {
+        color: white;
+        font-size: 2em;
+    }
+    .bmi-value {
+        color: white;
+        font-size: 3.5em;
+        text-align: center;
+    }
+    #calculator-page {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 30em;
+        flex-direction: column;
+        margin: 0 auto;
+    }
 
 
   </style>
@@ -121,9 +137,9 @@
       <!-- mid box for navigation bar -->
       <div class="mid">
         <ul class="navbar">
-          <li><a href="#" class="active">Home</a></li>
+          <li><a id="home-page" href="#" class="active" onclick="openHomePage();return false;">Home</a></li>
           <li><a href="#">About Us</a></li>
-          <li><a href="#">Fitness Calculator</a></li>
+          <li><a id="fitness-calculator-page" href="#" onclick="openFitnessPage();return false;">Fitness Calculator</a></li>
           <li><a href="#">Contact Us</a></li>
         </ul>
       </div>
@@ -133,7 +149,7 @@
           <button class="btn">Email Us</button>
       </div>
     </header>
-    <div class="container">
+    <div id="homepage" class="container">
         <h1>Join the best gym of Delhi now</h1>
         <form action="noaction.php">
             <div class="form-group">
@@ -154,7 +170,45 @@
             <button class="btn">Submit</button>
         </form>
     </div>
-    
+    <div id="calculator-page" class="container" style="display:none;">
+        <h1>Calculate you BMI</h1>
+        <form action="#" onSubmit="calculateBMI();return false;">
+            <div class="form-group">
+                <input type="text" id="height" name="height" placeholder="Enter your height (m)">
+            </div>
+            <div class="form-group">
+                <input type="number" id="weight" name="weight" placeholder="Enter your weight (kg)">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+        <div id="bmi-result" style="display:none;">
+            <p class="bmi-text">Your BMI is</p>
+            <p id="bmi-value" class="bmi-value">20</p>
+        </div>
+    </div>
+    <script type="text/javascript">
+        function calculateBMI(){
+            var weight = parseInt(document.getElementById("weight").value);
+            var height = parseFloat(document.getElementById("height").value);
+            var bmi = weight / (height*height);
+            var bmiValue = document.getElementById("bmi-value");
+            bmiValue.innerText = bmi.toString();
+            document.getElementById("bmi-result").style.display = 'block';
+        }
 
+        function openFitnessPage(){
+            document.getElementById('homepage').style.display = 'none';
+            document.getElementById('calculator-page').style.display = 'flex';
+            document.getElementById("fitness-calculator-page").classList.add("active");
+            document.getElementById("home-page").classList.remove("active");
+        }
+
+        function openHomePage(){
+            document.getElementById('calculator-page').style.display = 'none';
+            document.getElementById('homepage').style.display = 'block';
+            document.getElementById("home-page").classList.add("active");
+            document.getElementById("fitness-calculator-page").classList.remove("active");
+        }
+    </script>
     </body>
 </html>
