@@ -3,6 +3,10 @@ buttons = document.querySelectorAll("button");
 let screenValue = "";
 for (item of buttons) {
   item.addEventListener("click", (e) => {
+
+    const audio = new Audio();
+    audio.src = "./timer_beep.mp3";
+    audio.play();
     buttonText = e.target.innerText;
     console.log("Button text is ", buttonText);
     if (buttonText == "X") {
