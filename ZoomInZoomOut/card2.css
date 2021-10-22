@@ -1,0 +1,52 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+.contain{
+    width: 400px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+ .contain .img{
+     transition: all 0.6s;
+ }
+ .contain:hover .img{
+     transform: scale(0);
+ }
+
+.contain .img img{
+    width: 100%;
+    height: 100%;
+}
+h1{
+    padding-bottom: 10px;
+}
+
+#word{
+    border-top: 3px solid yellow;
+    border-bottom:3px solid yellow;
+    padding: 5px;
+
+}
+.contain .content{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background-color: chocolate;
+    text-align: center;
+    color: white;
+    padding: 60px 20px;
+    transform: scale(0) rotate(-180deg);
+    transition: all 0.6s;
+}
+.contain:hover .content{
+    transform: scale(1) rotate(0);
+    transition-delay:0.2s;
+}
+
+}
