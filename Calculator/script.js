@@ -18,7 +18,19 @@ for (item of buttons) {
       screen.value = screenValue;
     } else if (buttonText == "=") {
       screen.value = eval(screenValue);
-    } else {
+    } else if(buttonText=="Sin"){
+      screen.value = Math.sin(screenValue)
+    }
+    else if(buttonText=="Cos"){
+      screen.value = Math.cos(screenValue)
+    }
+    else if(buttonText=="Tan"){
+      screen.value = Math.tan(screenValue)
+    }
+    else if(buttonText=="Pi"){
+      screen.value = Math.PI
+    }
+    else {
       screenValue += buttonText;
       screen.value = screenValue;
     }
