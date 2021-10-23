@@ -203,9 +203,7 @@ aside .tools.active {
   width: 100%;
 }
 
-.uploadimage > input {
-  display: none;
-}
+
 
 @keyframes resize {
   0% {
