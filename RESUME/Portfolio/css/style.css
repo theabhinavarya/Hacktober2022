@@ -332,7 +332,7 @@ section.skills .skills__wrapper .skill-box {
   margin-bottom: 4rem;
 }
 section.skills .skills__wrapper .skill-box .progress__wrap {
-  background: #20294a;
+  background: #3f3f3f;
   height: 6px;
   width: 100%;
   box-shadow: 0px 0px 1px 0.25px #272e42;
