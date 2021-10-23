@@ -98,25 +98,25 @@ export default class Game {
             context.rect(0, 0, this.gameWidth, this.gameHeight);
             gameStart.style.display = "block";
 
-            context.font = "40px Arial";
-            context.fillStyle = "pink";
+            context.font = "48px Hammersmith One";
+            context.fillStyle = "white";
             context.textAlign = "center";
-            context.fillText("Brick Breaker Instructions", this.gameWidth / 2, this.gameHeight / 4);
-            context.font = "25px Arial";
-            context.fillText("1. Press Space Bar to start the game.", this.gameWidth / 2, this.gameHeight / 2);
-            context.fillText("2. Press Escape Button to Pause/Resume the game.", this.gameWidth / 2, this.gameHeight / 1.7);
-            context.fillText("3. Press Left/Right Arrow Keys to move the paddle.", this.gameWidth / 2, this.gameHeight / 1.45);
-            context.fillText("4. Player has total of 3 lives and there are 3 levels in the game.", this.gameWidth / 2, this.gameHeight / 1.28);
+            context.fillText("BRICK BREAKER INSTRUCTION", this.gameWidth / 2, this.gameHeight / 4);
+            context.font = "34px Hammersmith One";
+            context.fillText("- SPACE BAR to start game", this.gameWidth / 2, this.gameHeight / 2);
+            context.fillText("- ESC to pause/resume game", this.gameWidth / 2, this.gameHeight / 1.7);
+            context.fillText("- LEFT/RIGHT arrow to move paddle", this.gameWidth / 2, this.gameHeight / 1.45);
+            context.fillText("- The game has 3 Lives and 3 Levels", this.gameWidth / 2, this.gameHeight / 1.28);
             }
 
         if(this.gameState === GAMESTATE.GAMEOVER) {
             context.rect(0, 0, this.gameWidth, this.gameHeight);
-            context.font = "30px Arial";
+            context.font = "30px Hammersmith One";
             context.fillStyle = "white";
             context.textAlign = "center";
             canvas.style.display = "none"
             gameover.style.display = "block";
-            youlose.style.display = "block";
+            youlose.style.display = "inline-block";
         }
 
         // SHOW SCORE
