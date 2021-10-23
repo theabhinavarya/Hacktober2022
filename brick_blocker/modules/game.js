@@ -116,7 +116,7 @@ export default class Game {
             context.textAlign = "center";
             canvas.style.display = "none"
             gameover.style.display = "block";
-            youlose.style.display = "inline-block";
+            youlose.style.display = "none";
         }
 
         // SHOW SCORE
