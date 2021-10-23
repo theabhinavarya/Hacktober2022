@@ -26,7 +26,7 @@ DevKit is open source collection of frontend project made with HTML, CSS, Javasc
 - Fork the Repo and create a Branch for any Issue that you are working upon.
 - Create a Pull Request which will be promptly reviewed and suggestions would be added to improve it.
 - Add Screenshots to help us know what this Script is all about.
-- Having difficulty in contributing? Read the [Contribution Guide](https://github.com/anjali1102/Hacktober2021/blob/main/CONTRIBUTING.md) for a detailed explanation.
+- Having difficulty in contributing? Read the [Contribution Guide](https://github.com/anjali1102/Hacktober2021/blob/master/CONTRIBUTING.md) for a detailed explanation.
 
 # Show some ❤️ by staring ⭐️ this repository.
 
