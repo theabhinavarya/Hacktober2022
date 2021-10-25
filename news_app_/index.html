@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Todo App React js - Abipravi</title>
+        <script type="application/javascript" src="https://unpkg.com/react@16.0.0/umd/react.production.min.js"></script>
+        <script src='https://unpkg.com/react-router-dom@5.0.0/umd/react-router-dom.min.js'></script>
+        <script type="application/javascript"
+            src="https://unpkg.com/react-dom@16.0.0/umd/react-dom.production.min.js"></script>
+        <script type="application/javascript" src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
+        <srcipt src='https://cdn.jsdelivr.net/npm/react-swipeable@6.2.0/dist/react-swipeable.umd.min.js'></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+        <link rel='stylesheet' href='style.css'></link>
+        <link rel='stylesheet' href='newscard.css'></link>
+    </head>
+
+    <body>
+        <div id="root"></div>
+        <script type="text/babel">
+            'use strict';
+            const Link = ReactRouterDOM.Link;
+            const Route = ReactRouterDOM.Route;
+            const Router = ReactRouterDOM.HashRouter;
+            const Switch = ReactRouterDOM.Switch;
+            class App extends React.Component {
+                constructor(props) {
+                    super(props);
+                    this.state =  {
+                        open: false
+                    }
+                }
+                setopen = () => {
+                    this.setState({open: !this.state.open});
+                }
+                render() {
+                    const open = this.state.open;
+                return (
+                    <Router>
+                       <div style={{ overflow: 'hidden', height: '100vh' }}>
+						<div
+							className='App'
+							style={{ display: 'flex', height: '100vh' }}>
+							<div
+								onClick={this.setopen}
+								className={this.state.open === true ? 'open' : 'closed'}>
+								{open === false ? (
+									<div
+										style={{
+											padding: 3,
+											margin: 10,
+											position: 'absolute',
+											border: '1px solid blue',
+											borderRadius: 100,
+										}}>
+										<img
+											src="data:image/jpeg;base64,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"
+											onClick={this.setopen}
+											lazy
+											alt='avatar'
+											style={{
+												width: '50px',
+												height: '50px',
+												borderRadius: 100,
+											}}
+										/>
+									</div>
+								) : (
+									<div></div>
+								)}
+								{this.state.open === true && (
+									<div>
+										<img
+											src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF5dng_qgNEqwjqSvNnD9PHbsdy9TaBsRgYA&usqp=CAU"
+											onClick={this.setopen}
+                                            lazy
+											alt='close menu icon'
+											style={{ width: '5%', height: 'auto', borderRadius: '500%'}}
+										/>
+										<div className='container_sidebar '>
+											<div>
+												<ul className='list-group'>
+													<li>
+														<Link class='btn btn-primary' to='/search'>
+															Search News
+														</Link>
+													</li>
+													<li>
+														<Link class='btn btn-primary' to='/home'>
+															Home
+														</Link>
+													</li>
+													<li>
+														<Link class='btn btn-primary' to='/tech'>
+															Tech News
+														</Link>
+													</li>
+													<li>
+														<Link class='btn btn-primary' to='/sports'>
+															Sports News
+														</Link>
+													</li>
+													<li>
+														<Link class='btn btn-primary' to='/education'>
+															Educational News
+														</Link>
+													</li>
+													<li>
+														<Link class='btn btn-primary' to='/business'>
+															Business News
+														</Link>
+													</li>
+													<li>
+														<Link class='btn btn-primary' to='/economy'>
+															Economy
+														</Link>
+													</li>
+													<li>
+														<Link class='btn btn-primary' to='/market'>
+															Share Market
+														</Link>
+													</li>
+													<li>
+														<a class='btn btn-primary' href='https://newsapp-abipravi.netlify.app/contact' rel='noopener' target="_blank">
+															Feed Back Form
+														</a>
+													</li>
+													<li>
+														<Link class='btn btn-primary' to='/sports/latest'>
+															Latest Sports News
+														</Link>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								)}
+							</div>
+							<div class='main'>
+								<div class='news-container'>
+									<Switch>
+										<Route exact path='/home'>
+											<Home />
+										</Route>
+										<Route path='/tech'>
+											<TechNews />
+										</Route>
+										<Route path='/education'>
+											<EducationalNews />
+										</Route>
+										<Route exact path='/sports'>
+											<SportsNewsComponent />
+										</Route>
+										<Route exact path='/sports/latest'>
+											<SportsNewsLatestComponent />
+										</Route>
+										<Route exact path='/business'>
+											<BusinessNews />
+										</Route>
+										<Route exact path='/economy'>
+											<Economy />
+										</Route>
+										<Route exact path='/market'>
+											<Market />
+										</Route>
+										<Route exact path='/search'>
+											<SearchNews />
+										</Route>
+										<Route exact path='/'>
+											<Home />
+										</Route>
+									</Switch>
+								</div>
+							</div>
+						</div>
+					</div>
+
+                    </Router>
+                )
+            }
+            }
+
+            class Home extends React.Component {
+                constructor(props){
+                    super(props)
+                    this.state = {
+                        news: []
+                    } 
+                    }
+
+                    getNews = async() => {
+                        const response = await fetch("http://newsapi-abipravi.herokuapp.com/news");
+                        const data = await response.json();
+                        await this.setState({news: data})
+                        console.log(this.state.data)
+                    }
+
+                    componentDidMount(){
+                        this.getNews()
+                    }
+
+                    render() {
+                        const {news} = this.state
+                        return (<div>
+                            {news.length === 0 && (
+                                <div
+                                    style={{
+                                        width: '100%',
+                                        height: '100%',
+                                        display: 'flex',
+                                        justifyContent: 'center',
+                                        padding: '100px',
+                                    }}>
+                                    <div class='spinner-border text-primary' role='status'>
+                                        <span class='visually-hidden'>Loading...</span>
+                                    </div>
+                                </div>
+                            )}
+                            {news.map((data) => {
+                                return (
+                                    <NewsCardComponent
+                                        image={data.image}
+                                        news={data.news}
+                                        link={data.link}
+                                        shortnews={data.shortnews}
+                                    />
+                                );
+                            })}
+                        </div>)
+                    }
+               
+            }
+            class SearchNews extends React.Component {
+                constructor(props){
+                    super(props)
+                    this.state = {
+                        news: [],
+                        search: ''
+                    } 
+                    }
+                    getNews = async() => {
+                        const response = await fetch(`https://newsapi-abipravi.herokuapp.com/search/${this.state.search}`);
+                        const data = await response.json();
+                        await this.setState({news: data})
+                    }
+
+                    componentDidMount(){
+                        this.getNews()
+                    }
+                    render() {
+                        const {news} = this.state
+                        return (
+                            <div>
+                                <div className="searchtop" >
+                                    <input type="text" style={{height: '5vh'}} className="inputs" placeholder="search" onChange={(e) => this.setState({search: e.target.value})}  />
+                                    <button style={{height: '5vh'}} class="btn btn-primary" onClick={this.getNews}>Search</button>
+                                </div>
+                            <div style={{height: '80vh', overflowY: 'scroll'}}>
+                                {news.length === 0 && (
+                                    <div
+                                        style={{
+                                            width: '100%',
+                                            height: '100%',
+                                            display: 'flex',
+                                            justifyContent: 'center',
+                                            padding: '100px',
+                                        }}>
+                                        <div class='spinner-border text-primary' role='status'>
+                                            <span class='visually-hidden'>Loading...</span>
+                                        </div>
+                                    </div>
+                                )}
+                                {news.map((data) => {
+                                    return (
+                                        <NewsCardComponent
+                                            image={data.image}
+                                            news={data.news}
+                                            link={data.link}
+                                            shortnews={data.shortnews}
+                                        />
+                                    );
+                                })}
+                                </div>
+                            </div>
+                        )
+                    }
+               
+            }
+            class TechNews extends React.Component {
+               constructor(props){
+                    super(props)
+                    this.state = {
+                        news: []
+                    } 
+                    }
+
+                    getNews = async() => {
+                        const response = await fetch("https://newsapi-abipravi.herokuapp.com/tech");
+                        const data = await response.json();
+                        await this.setState({news: data})
+                        console.log(this.state.data)
+                    }
+
+                    componentDidMount(){
+                        this.getNews()
+                    }
+
+                    render() {
+                        const {news} = this.state
+                        return (<div>
+                            {news.length === 0 && (
+                                <div
+                                    style={{
+                                        width: '100%',
+                                        height: '100%',
+                                        display: 'flex',
+                                        justifyContent: 'center',
+                                        padding: '100px',
+                                    }}>
+                                    <div class='spinner-border text-primary' role='status'>
+                                        <span class='visually-hidden'>Loading...</span>
+                                    </div>
+                                </div>
+                            )}
+                            {news.map((data) => {
+                                return (
+                                    <NewsCardComponent
+                                        image={data.image}
+                                        news={data.news}
+                                        link={data.link}
+                                        shortnews={data.shortnews}
+                                    />
+                                );
+                            })}
+                        </div>)
+                    }
+               
+               
+            }
+            class EducationalNews extends React.Component {
+                constructor(props){
+                    super(props)
+                    this.state = {
+                        news: []
+                    } 
+                    }
+
+                    getNews = async() => {
+                        const response = await fetch("https://newsapi-abipravi.herokuapp.com/search/education zee news");
+                        const data = await response.json();
+                        await this.setState({news: data})
+                        console.log(this.state.data)
+                    }
+
+                    componentDidMount(){
+                        this.getNews()
+                    }
+
+                    render() {
+                        const {news} = this.state
+                        return (<div>
+                            {news.length === 0 && (
+                                <div
+                                    style={{
+                                        width: '100%',
+                                        height: '100%',
+                                        display: 'flex',
+                                        justifyContent: 'center',
+                                        padding: '100px',
+                                    }}>
+                                    <div class='spinner-border text-primary' role='status'>
+                                        <span class='visually-hidden'>Loading...</span>
+                                    </div>
+                                </div>
+                            )}
+                            {news.map((data) => {
+                                return (
+                                    <NewsCardComponent
+                                        image={data.image}
+                                        news={data.news}
+                                        link={data.link}
+                                        shortnews={data.shortnews}
+                                    />
+                                );
+                            })}
+                        </div>)
+                    }
+               
+            }
+            class SportsNewsComponent extends React.Component {
+                constructor(props){
+                    super(props)
+                    this.state = {
+                        news: []
+                    } 
+                    }
+
+                    getNews = async() => {
+                        const response = await fetch("https://newsapi-abipravi.herokuapp.com/sports");
+                        const data = await response.json();
+                        await this.setState({news: data})
+                        console.log(this.state.data)
+                    }
+
+                    componentDidMount(){
+                        this.getNews()
+                    }
+
+                    render() {
+                        const {news} = this.state
+                        return (<div>
+                            {news.length === 0 && (
+                                <div
+                                    style={{
+                                        width: '100%',
+                                        height: '100%',
+                                        display: 'flex',
+                                        justifyContent: 'center',
+                                        padding: '100px',
+                                    }}>
+                                    <div class='spinner-border text-primary' role='status'>
+                                        <span class='visually-hidden'>Loading...</span>
+                                    </div>
+                                </div>
+                            )}
+                            {news.map((data) => {
+                                return (
+                                    <NewsCardComponent
+                                        image={data.image}
+                                        news={data.news}
+                                        link={data.link}
+                                        shortnews={data.shortnews}
+                                    />
+                                );
+                            })}
+                        </div>)
+                    }
+               
+            }
+            class SportsNewsLatestComponent extends React.Component {
+                constructor(props){
+                    super(props)
+                    this.state = {
+                        news: []
+                    } 
+                    }
+
+                    getNews = async() => {
+                        const response = await fetch("http://newsapi-abipravi.herokuapp.com/sports/latest");
+                        const data = await response.json();
+                        await this.setState({news: data})
+                        console.log(this.state.data)
+                    }
+
+                    componentDidMount(){
+                        this.getNews()
+                    }
+
+                    render() {
+                        const {news} = this.state
+                        return (<div>
+                            {news.length === 0 && (
+                                <div
+                                    style={{
+                                        width: '100%',
+                                        height: '100%',
+                                        display: 'flex',
+                                        justifyContent: 'center',
+                                        padding: '100px',
+                                    }}>
+                                    <div class='spinner-border text-primary' role='status'>
+                                        <span class='visually-hidden'>Loading...</span>
+                                    </div>
+                                </div>
+                            )}
+                            {news.map((data) => {
+                                return (
+                                    <NewsCardComponent
+                                        image={data.image}
+                                        news={data.news}
+                                        link={data.link}
+                                        shortnews={data.shortnews}
+                                    />
+                                );
+                            })}
+                        </div>)
+                    }
+               
+            }
+            class BusinessNews extends React.Component {
+                constructor(props){
+                    super(props)
+                    this.state = {
+                        news: []
+                    } 
+                    }
+
+                    getNews = async() => {
+                        const response = await fetch("https://newsapi-abipravi.herokuapp.com/business");
+                        const data = await response.json();
+                        await this.setState({news: data})
+                        console.log(this.state.data)
+                    }
+
+                    componentDidMount(){
+                        this.getNews()
+                    }
+
+                    render() {
+                        const {news} = this.state
+                        return (<div>
+                            {news.length === 0 && (
+                                <div
+                                    style={{
+                                        width: '100%',
+                                        height: '100%',
+                                        display: 'flex',
+                                        justifyContent: 'center',
+                                        padding: '100px',
+                                    }}>
+                                    <div class='spinner-border text-primary' role='status'>
+                                        <span class='visually-hidden'>Loading...</span>
+                                    </div>
+                                </div>
+                            )}
+                            {news.map((data) => {
+                                return (
+                                    <NewsCardComponent
+                                        image={data.image}
+                                        news={data.news}
+                                        link={data.link}
+                                        shortnews={data.shortnews}
+                                    />
+                                );
+                            })}
+                        </div>)
+                    }
+               
+            }
+            class Economy extends React.Component {
+               constructor(props){
+                    super(props)
+                    this.state = {
+                        news: []
+                    } 
+                    }
+
+                    getNews = async() => {
+                        const response = await fetch("https://newsapi-abipravi.herokuapp.com/business/economy");
+                        const data = await response.json();
+                        await this.setState({news: data})
+                        console.log(this.state.data)
+                    }
+
+                    componentDidMount(){
+                        this.getNews()
+                    }
+
+                    render() {
+                        const {news} = this.state
+                        return (<div>
+                            {news.length === 0 && (
+                                <div
+                                    style={{
+                                        width: '100%',
+                                        height: '100%',
+                                        display: 'flex',
+                                        justifyContent: 'center',
+                                        padding: '100px',
+                                    }}>
+                                    <div class='spinner-border text-primary' role='status'>
+                                        <span class='visually-hidden'>Loading...</span>
+                                    </div>
+                                </div>
+                            )}
+                            {news.map((data) => {
+                                return (
+                                    <NewsCardComponent
+                                        image={data.image}
+                                        news={data.news}
+                                        link={data.link}
+                                        shortnews={data.shortnews}
+                                    />
+                                );
+                            })}
+                        </div>)
+                    }
+               
+            }
+            class Market extends React.Component {
+               constructor(props){
+                    super(props)
+                    this.state = {
+                        news: []
+                    } 
+                    }
+
+                    getNews = async() => {
+                        const response = await fetch("https://newsapi-abipravi.herokuapp.com/business/market");
+                        const data = await response.json();
+                        await this.setState({news: data})
+                        console.log(this.state.data)
+                    }
+
+                    componentDidMount(){
+                        this.getNews()
+                    }
+
+                    render() {
+                        const {news} = this.state
+                        return (<div>
+                            {news.length === 0 && (
+                                <div
+                                    style={{
+                                        width: '100%',
+                                        height: '100%',
+                                        display: 'flex',
+                                        justifyContent: 'center',
+                                        padding: '100px',
+                                    }}>
+                                    <div class='spinner-border text-primary' role='status'>
+                                        <span class='visually-hidden'>Loading...</span>
+                                    </div>
+                                </div>
+                            )}
+                            {news.map((data) => {
+                                return (
+                                    <NewsCardComponent
+                                        image={data.image}
+                                        news={data.news}
+                                        link={data.link}
+                                        shortnews={data.shortnews}
+                                    />
+                                );
+                            })}
+                        </div>)
+                    }
+               
+            }
+            class NewsCardComponent extends React.Component {
+                constructor(props) {
+                    super(props)
+                    this.state = {};
+                }
+                render() {
+                    return (<div>
+                        <div className='newsCard border border-light shadow-sm p-3 mb-5 bg-body rounded '>
+                            <img
+                                src={this.props.image}
+                                lazy
+                                alt={'Loading error'}
+                                style={{ maxHeight: 100, width: 150 }}
+                                className='img-thumbnail'
+                            />
+                            <div className='news'>
+                                {this.props.shortnews && <h6 className='heading '>{this.props.news}</h6>}
+                                {!this.props.shortnews && <h6 className='heading'>{this.props.news}</h6>}
+                                <p className='summary text-muted'>{this.props.shortnews}</p>
+                                <div
+                                    className='d-flex justify-content-start d-grid gap-3'
+                                    style={{ width: '50%' }}>
+                                    <a
+                                        className='btn btn-outline-primary'
+                                        rel='noreferrer'
+                                        href={this.props.link}
+                                        target='_blank'>
+                                        Source
+                                    </a>
+                                    <a
+                                        rel='noreferrer'
+                                        target='_blank'
+                                        href="https://newsapp-abipravi.netlify.app/"
+                                        className='btn btn-outline-primary space'>
+                                        Add to Bookmark
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>)
+                }
+            }
+
+            ReactDOM.render(<App />, document.getElementById('root'))
+        </script>
+    </body>
+
+</html>
