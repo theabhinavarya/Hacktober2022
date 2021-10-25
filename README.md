@@ -38,45 +38,37 @@ DevKit is open source collection of frontend project made with HTML, CSS, Javasc
 <img height="250" width ="250" src = "https://www.quickstart.com/pub/media/magefan_blog/Free_Courses_to_learn_JavaScript.jpg"></img>
 
 # Screenshots 
+<table>
+  <tr>
+    <td>Fire Particle</td>
+     <td>Space Animation☄</td>
+     <td>Brick Breaker</td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/anjali1102/Hacktober2021/blob/master/Project%20Screenshots/Fire%20particle%20generator.png" width=270 height=480></td>
+    <td><img src="https://github.com/anjali1102/Hacktober2021/blob/master/Project%20Screenshots/space-animation.gif" width=270 height=480></td>
+    <td><img src="https://github.com/anjali1102/Hacktober2021/blob/master/Project%20Screenshots/brick%20breaker%20ss.png" width=270 height=480></td>
+  </tr>
+  <tr>
+    <td>CSS Animation Bus</td>
+     <td>Resume</td>
+     <td>Confetti Animation</td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/anjali1102/Hacktober2021/blob/master/Project%20Screenshots/css%20svg.png" width=270 height=480></td>
+    <td><img src="https://github.com/anjali1102/Hacktober2021/blob/master/Project%20Screenshots/resume-demo.png" width=270 height=480></td>
+    <td><img src="https://github.com/anjali1102/Hacktober2021/blob/master/Project%20Screenshots/confetti-animation.gif" width=270 height=480></td>
+  </tr>
+    <tr>
+    <td>Text Editor</td>
+     <td></td>
+     <td></td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/anjali1102/Hacktober2021/blob/master/Project%20Screenshots/team-editor-ss.png" width=270 height=480></td>
+    
+  </tr>
 
-### 1 . Fire  Particle Generator 
 
-<p align="center">
-    <a href="https://github.com/anjali1102"><img  height="500" width="500" src="https://github.com/anjali1102/Hacktober2021/blob/master/Project%20Screenshots/Fire%20particle%20generator.png" /></a>
-</p>
-
-### 2 . Space Animation
-
-<p align="center">
-    <a href="https://github.com/anjali1102"><img  height="500" width="500" src="https://github.com/anjali1102/Hacktober2021/blob/master/Project%20Screenshots/space-animation.gif" /></a>
-</p>
-
-### 3 . Brick Breaker
-
-<p align="center">
-    <a href="https://github.com/anjali1102"><img  height="500" width="500" src="https://github.com/anjali1102/Hacktober2021/blob/master/Project%20Screenshots/brick%20breaker%20ss.png" /></a>
-</p>
-
-### 4 . CSS Animation
-
-<p align="center">
-    <a href="https://github.com/anjali1102"><img  height="500" width="500" src="https://github.com/anjali1102/Hacktober2021/blob/master/Project%20Screenshots/css%20svg.png" /></a>
-</p>
-
-### 5 . Resume
-<p align="center">
-    <a href="https://github.com/anjali1102"><img  height="500" width="500" src="https://github.com/anjali1102/Hacktober2021/blob/master/Project%20Screenshots/resume-demo.png" /></a>
-</p>
-
-### 5 . Confetti Animation
-<p align="center">
-    <a href="https://github.com/anjali1102"><img  height="500" width="500" src="https://github.com/anjali1102/Hacktober2021/blob/master/Project%20Screenshots/confetti-animation.gif"
-/></a>
-</p>
-
-### 6. Text Editor
-<p align="center">
-    <a href="https://github.com/anjali1102"><img  height="500" width="500" src="https://github.com/anjali1102/Hacktober2021/blob/master/Project%20Screenshots/team-editor-ss.png"
-/></a>
-</p>
+ </table>
 
