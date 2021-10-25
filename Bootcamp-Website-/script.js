@@ -15,11 +15,13 @@ var scroll = new SmoothScroll('a[href*="#"]',{
 });
 
 let isDark = false;
+
+// Click function for the dark mode button
 darkBtn.onclick = function(){
-    if(isDark == false){
+    if(isDark == false){ // if we are in the dark mode
         isDark = true;
         
-        document.querySelectorAll("*")[0].style.backgroundColor = "#696969"
+        document.querySelectorAll("*")[0].style.backgroundColor = "#696969" // change the background color of all the elements 
         darkBtn.innerText = "Light Mode"
         changeTagColor("p" , "#FFF5EE")
         changeTagColor("h1" , "#f67c92")
@@ -27,7 +29,7 @@ darkBtn.onclick = function(){
         changeTagColor("small" , "#FFF5EE")
         changeTagColor("h4" , "#FA8072")
         changeTagColor("button" , "#FFF5EE")
-    }else {
+    }else { // if we are in the light mode
         isDark = false;
         darkBtn.innerText = "Dark Mode"
         document.querySelectorAll("*")[0].style.backgroundColor = "transparent"
@@ -40,6 +42,7 @@ darkBtn.onclick = function(){
     }
 }
 
+// Chnage the color of a tag
 function changeTagColor(tag , color){
     let allTags = document.querySelectorAll(`${tag}`);
     allTags.forEach((tag) => tag.style.color = `${color}`)
