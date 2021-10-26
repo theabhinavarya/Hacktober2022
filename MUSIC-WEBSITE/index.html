@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Parth Johri Music Webapp</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/png" href="assets/img/icons8-earbud-headphones-80.png">
+        <link rel="stylesheet" href="style.css" rel="stylesheet">
+    </head>
+    <body>
+     <div class="container">
+        <div class="navigation">
+            <img src="assets/img/NicePng_music-vector-png_3379306.png" alt="Music" class="logo">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="https://github.com/ParthJohri">ABOUT US</a></li>
+                <li><a href="https://open.spotify.com/playlist/37i9dQZF1DWXtlo6ENS92N?si=c4788544b6b84291">MUSIC</a></li>
+                <li><a href="https://www.linkedin.com/in/parthjohri07/">CONTACT</a></li>
+            </ul>
+        </div>
+      <hr>
+        <div class="right">
+            <h1 class="righth1">LET'S<br> PLAY <br>THE MUSIC</h1>
+        </div>
+        <div class="left">
+            <h3 class="lefth1">Click to play</h3>
+            <img class="logo"id="icon"src="assets/img/icons8-play-button-circled-100.png" alt="PlayButton"/>
+        </div>
+        <audio id="mySong">
+            <source src="assets/audio/DJ RDX - Sakhiyaan 2.0.mp3" type="audio/mp3">
+        </audio>
+        <div style="font-family: Montserrat;" id="bottom">⭐️ Made by <a href="https://www.linkedin.com/in/parthjohri07/" style="font-family: Montserrat;">Parth Johri</a></div>  
+     </div>
+ 
+    </body>
+    <script>
+        var mySong=document.getElementById("mySong");
+        var icon=document.getElementById("icon");
+        icon.onclick=function(){
+            if(mySong.paused)
+            {mySong.play();
+              icon.src="assets/img/icons8-stop-circled-100.png"; 
+            }
+            else
+            {mySong.pause();
+            icon.src="assets/img/icons8-play-button-circled-100.png"}
+        }
+    </script>
+</html>
