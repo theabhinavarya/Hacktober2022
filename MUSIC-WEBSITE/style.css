@@ -1,0 +1,101 @@
+*{
+    margin:0px;
+    padding:0px;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    height:100vh;
+    width:100%;
+    position:relative;
+    background-image: url("assets/img/kari-shea-YCQFgqOzLmU-unsplash.jpg");
+    background-size:cover;
+    background-position:center;
+}
+.logo{
+    width:70px;
+    cursor:pointer;
+}
+.navigation{
+    width:88%;
+    display:flex;
+    margin:auto;
+    padding:15px 0px 0px 0px;
+    align-items:center;
+    justify-content:space-between;
+}
+li{
+    list-style: none;
+    text-decoration: none;
+}
+.navigation ul li{
+    display:inline-block;
+    margin:0px 17px;
+    text-decoration: none;
+    justify-content:space-between;
+}
+
+.navigation ul li a{
+    text-decoration: none;
+    font-size: 17px;
+    color:#000000;
+}
+
+.navigation ul li a:hover{
+    color:#df5012;
+}
+.left{
+float:left;
+display:flex;
+margin-left:2%;
+margin-top: 15%;
+}
+.right{
+float:right;
+margin-right:4%;
+margin-top:5%;
+}
+.lefth1{
+    text-align:left;
+    color:rgba(249, 255, 252, 0.968);
+    font-size:50px;
+    margin-top:5px;
+    margin-right:5px;
+    font-family:sans-serif;
+    text-transform: Uppercase;
+}
+.lefth1:hover{
+    color:rgb(237, 148, 40);
+}
+.righth1{
+    text-align:left;
+    color:aliceblue;
+    font-size:90px;
+    font-family:sans-serif;
+    transition: 0.5s;
+}
+.righth1:hover {
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc,
+                 0 3px 0 #ccc, 0 4px 0 #ccc,
+                 0 5px 0 #ccc, 0 6px 0 #ccc,
+                 0 7px 0 #ccc, 0 8px 0 #ccc,
+                 0 9px 0 #ccc, 0 10px 0 #ccc,
+                 0 11px 0 #ccc, 0 12px 0 #ccc,
+                 0 20px 30px rgba(0, 0, 0, 0.5);
+}
+#bottom{
+    position:absolute;
+    bottom:0;
+    width:100%;
+    text-align: center;
+    color:#f6c800;
+    padding: 15px 0px;
+}
+#bottom a { text-decoration: none; color:rgb(255, 208, 1); }
+#bottom a:hover { text-decoration: none; color:rgb(237, 148, 40); }
+
