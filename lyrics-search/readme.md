@@ -34,3 +34,4 @@ A browser based application using JavaScript to search songs, artists and lyrics
 ## Deployed
 
 To view the deployed app click [here](https://lyrics-app-de.herokuapp.com)
+
