@@ -34,4 +34,4 @@ Java Script, Html, css
 
 ## Deployed 
 
-To view the deployed app click [here]()
+To view the deployed app click [here](https://music-app-de.herokuapp.com/)
