@@ -1,3 +1,0 @@
-A headphone landing page...
-
-https://rocksaction.github.io/landing-page/
