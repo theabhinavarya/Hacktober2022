@@ -45,9 +45,9 @@ DevKit is open source collection of frontend project made with HTML, CSS, Javasc
      <td>Brick Breaker</td>
   </tr>
   <tr>
-    <td><img src="https://github.com/anjali1102/Hacktober2021/blob/master/Project%20Screenshots/Fire%20particle%20generator.png" width=270 height=480></td>
-    <td><img src="https://github.com/anjali1102/Hacktober2021/blob/master/Project%20Screenshots/space-animation.gif" width=270 height=480></td>
-    <td><img src="https://github.com/anjali1102/Hacktober2021/blob/master/Project%20Screenshots/brick%20breaker%20ss.png" width=270 height=480></td>
+    <td><img src="https://github.com/anjali1102/Hacktober2022/blob/master/Project%20Screenshots/Fire%20particle%20generator.png" width=270 height=480></td>
+    <td><img src="https://github.com/anjali1102/Hacktober2022/blob/master/Project%20Screenshots/space-animation.gif" width=270 height=480></td>
+    <td><img src="https://github.com/anjali1102/Hacktober2022/blob/master/Project%20Screenshots/brick%20breaker%20ss.png" width=270 height=480></td>
   </tr>
   <tr>
     <td>CSS Animation Bus</td>
@@ -55,9 +55,9 @@ DevKit is open source collection of frontend project made with HTML, CSS, Javasc
      <td>Confetti Animation</td>
   </tr>
   <tr>
-    <td><img src="https://github.com/anjali1102/Hacktober2021/blob/master/Project%20Screenshots/css%20svg.png" width=270 height=480></td>
-    <td><img src="https://github.com/anjali1102/Hacktober2021/blob/master/Project%20Screenshots/resume-demo.png" width=270 height=480></td>
-    <td><img src="https://github.com/anjali1102/Hacktober2021/blob/master/Project%20Screenshots/confetti-animation.gif" width=270 height=480></td>
+    <td><img src="https://github.com/anjali1102/Hacktober2022/blob/master/Project%20Screenshots/css%20svg.png" width=270 height=480></td>
+    <td><img src="https://github.com/anjali1102/Hacktober2022/blob/master/Project%20Screenshots/resume-demo.png" width=270 height=480></td>
+    <td><img src="https://github.com/anjali1102/Hacktober2022/blob/master/Project%20Screenshots/confetti-animation.gif" width=270 height=480></td>
   </tr>
     <tr>
     <td>Text Editor</td>
@@ -65,7 +65,7 @@ DevKit is open source collection of frontend project made with HTML, CSS, Javasc
      <td></td>
   </tr>
   <tr>
-    <td><img src="https://github.com/anjali1102/Hacktober2021/blob/master/Project%20Screenshots/team-editor-ss.png" width=270 height=480></td>
+    <td><img src="https://github.com/anjali1102/Hacktober2022/blob/master/Project%20Screenshots/team-editor-ss.png" width=270 height=480></td>
     <td><img src="./HeartBeatAnimation/pic.gif" width=270 height=480></td>
     
   </tr>
