@@ -33,9 +33,9 @@ DevKit is open source collection of frontend project made with HTML, CSS, Javasc
 ## 💻 Languages used in this project
 
 <p align="center">
-<img height="250" width ="250" src = "https://acumbamail.com/blog/wp-content/uploads/2014/10/maquetacion-email-html.png"></img>
-<img height="250" width ="250" src = "https://www.ostraining.com/cdn/images/oscampus/courses/CSS-part-1.jpg"></img>
-<img height="250" width ="250" src = "https://www.quickstart.com/pub/media/magefan_blog/Free_Courses_to_learn_JavaScript.jpg"></img>
+<img height="300" width ="300" src = "https://acumbamail.com/blog/wp-content/uploads/2014/10/maquetacion-email-html.png"></img>
+<img height="300" width ="300" src = "https://www.ostraining.com/cdn/images/oscampus/courses/CSS-part-1.jpg"></img>
+<img height="300" width ="300" src = "https://www.quickstart.com/pub/media/magefan_blog/Free_Courses_to_learn_JavaScript.jpg"></img>
 
 # Screenshots 
 <table>
@@ -66,7 +66,7 @@ DevKit is open source collection of frontend project made with HTML, CSS, Javasc
   </tr>
   <tr>
     <td><img src="https://github.com/anjali1102/Hacktober2022/blob/master/Project%20Screenshots/team-editor-ss.png" width=270 height=480></td>
-    <td><img src="./HeartBeatAnimation/pic.gif" width=270 height=480></td>
+    <td><img src="./HeartBeatAnimation/pic.gif" width=260 height=470></td>
     
   </tr>
 
