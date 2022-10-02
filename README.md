@@ -60,8 +60,8 @@ DevKit is open source collection of frontend project made with HTML, CSS, Javasc
     <td><img src="https://github.com/anjali1102/Hacktober2022/blob/master/Project%20Screenshots/confetti-animation.gif" width=270 height=480></td>
   </tr>
     <tr>
-    <td>Text Editor</td>
-     <td>Heart Beat Animation</td>
+    <td>guess game</td>
+     <td>guess game</td>
      <td></td>
   </tr>
   <tr>
