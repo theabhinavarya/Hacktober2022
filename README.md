@@ -33,9 +33,9 @@ DevKit is open source collection of frontend project made with HTML, CSS, Javasc
 ## 💻 Languages used in this project
 
 <p align="center">
-<img height="300" width ="300" src = "https://acumbamail.com/blog/wp-content/uploads/2014/10/maquetacion-email-html.png"></img>
-<img height="300" width ="300" src = "https://www.ostraining.com/cdn/images/oscampus/courses/CSS-part-1.jpg"></img>
-<img height="300" width ="300" src = "https://www.quickstart.com/pub/media/magefan_blog/Free_Courses_to_learn_JavaScript.jpg"></img>
+<img height="300" width ="300" src = "https://www.freepnglogos.com/uploads/javascript-png/logo-html5-js-css3-png-transparent-logo-4.png"></img>
+<img height="300" width ="300" src = "https://reactjs.org/logo-og.png"></img>
+<img height="300" width ="300" src = "https://www.syncfusion.com/blogs/wp-content/uploads/2020/07/Top-6-Front-End-Web-Development-Tools-to-Increase-Your-Productivity-in-2020-1.jpg"></img>
 
 # Screenshots 
 <table>
@@ -60,15 +60,26 @@ DevKit is open source collection of frontend project made with HTML, CSS, Javasc
     <td><img src="https://github.com/anjali1102/Hacktober2022/blob/master/Project%20Screenshots/confetti-animation.gif" width=270 height=480></td>
   </tr>
     <tr>
-    <td>guess game</td>
-     <td>guess game</td>
-     <td></td>
+    <td>Drawing Board</td>
+     <td>guess Game</td>
+     <td>Guess Number</td>
   </tr>
   <tr>
     <td><img src="https://github.com/anjali1102/Hacktober2022/blob/master/Project%20Screenshots/team-editor-ss.png" width=270 height=480></td>
     <td><img src="./HeartBeatAnimation/pic.gif" width=260 height=470></td>
-    
+    <td><img src="https://github.com/anjali1102/Hacktober2022/blob/master/Project%20Screenshots/guess-game.png" width=270 height=480></td>
   </tr>
+  <tr>
+    <td>Joke generator</td>
+    <td>Quote generator</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/anjali1102/Hacktober2022/blob/master/Project%20Screenshots/joke-generator.png" width=270 height=480></td>
+    <td><img src="https://github.com/anjali1102/Hacktober2022/blob/master/Project%20Screenshots/quote-generator.png" width=260 height=470></td>
+    <td></td>
+  </tr>
+    
 
 
  </table>
