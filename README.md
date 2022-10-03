@@ -21,12 +21,12 @@ DevKit is open source collection of frontend project made with HTML, CSS, Javasc
 ## 💥 How to Contribute?
 
 
-- Take a look at the Existing [Issues](https://github.com/anjali1102/Hacktober2022/issues) or create your own Issues!
-- Wait for the Issue to be assigned to you after which you can start working on it.
-- Fork the Repo and create a Branch for any Issue that you are working upon.
-- Create a Pull Request which will be promptly reviewed and suggestions would be added to improve it.
-- Add Screenshots to help us know what this Script is all about.
-- Having difficulty in contributing? Read the [Contribution Guide](https://github.com/anjali1102/Hacktober2021/blob/master/CONTRIBUTING.md) for a detailed explanation.
+- Take Existing [Issues](https://github.com/anjali1102/Hacktober2022/issues) or create your own Issues! ⚙️
+- Get Assigned with Issues 🤖
+- Fork the Repo, then Clone forked repo.
+- Create a Pull Request. 🏃‍
+- Add *Screenshots/deployed link* in your project repo README.md🥺🥺
+- [Contribution Guide](https://github.com/anjali1102/Hacktober2021/blob/master/CONTRIBUTING.md)
 
 # Show some ❤️ by staring ⭐️ this repository.
 
