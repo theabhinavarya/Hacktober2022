@@ -72,12 +72,12 @@ DevKit is open source collection of frontend project made with HTML, CSS, Javasc
   <tr>
     <td>Joke generator</td>
     <td>Quote generator</td>
-    <td></td>
+    <td>REACT~PASSWORD~GENERATOR</td>
   </tr>
   <tr>
     <td><img src="https://github.com/anjali1102/Hacktober2022/blob/master/Project%20Screenshots/joke-generator.png" width=270 height=480></td>
-    <td><img src="https://github.com/anjali1102/Hacktober2022/blob/master/Project%20Screenshots/quote-generator.png" width=260 height=470></td>
-    <td></td>
+    <td><img src="https://github.com/anjali1102/Hacktober2022/blob/master/Project%20Screenshots/quote-generator.png" width=260 height=470></td>   
+    <td><img src="Project Screenshots/random_pass.png" width=260 height=470></td>
   </tr>
     
 
