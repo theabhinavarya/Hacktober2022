@@ -12,8 +12,15 @@ The project is about a web-based camera application.
 4. It’s use local Storage to store data. User can see all the details of movie.
 
 
-# Page
+# Deploy Link
 [https://movieapp19.netlify.app](https://movieapp19.netlify.app)
+
+# Page
+![Auth Page](https://github.com/darshan-trivedi-10/Image/blob/main/Screenshot%20(604).png)
+
+![Auth Page](https://github.com/darshan-trivedi-10/Image/blob/main/Screenshot%20(605).png)
+
+
 
 ## Technologies Used: 
 React.js, TMDB API, Local Storage
