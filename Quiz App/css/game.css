@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+body{
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.outerContainer{
+    background: url(../img/bg.jpg);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.bbBox{
+  border-radius: 10px;
+}
+.bbBoxLeft{
+ border-radius:10px ;
+
+}
+.bbBoxRight{
+  border-radius:10px ;
+
+}
+/* loader */
+.preloader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom:0;
+  right:0;
+  width: 100%;
+  height: 100vh;
+  z-index: 99999999;
+  background-image: url('../img/preloader.gif'); /* your icon gif file path */
+  background-repeat: no-repeat;
+  background-color: #FFF;
+  background-position: center;
+  }
+  
+  #stop-scrolling {
+    height: 100% !important;
+    overflow: hidden !important;
+    }
+.container{
+    height: 80%;
+}
+.container h1{
+  font-size: 120%;;
+  text-align: center;
+  width:80%;
+  /* margin: auto; */
+}
+.warning{
+  font-size: 120%;;
+  text-align: center;
+  width:80%;
+  margin: auto;
+}
+#hud{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* background-color: #3AB4F2 !important; */
+    width: 20%;
+}
+#hud-item{
+    display: flex;
+    flex-direction: column;
+    background-color: #22ABE2;
+    width: 100%;
+    justify-content: center;
+    height: 40%;
+    align-items: center;
+}
+.hudPrefix, .hudMainText{
+    background-color: transparent !important;
+    /* width: 50%; */
+}
+#progressBar{
+    margin-top: 5%;;
+    width: 80%;
+    height: 2rem;
+    border: 2px solid white; 
+}
+#progressBarFull{
+    width: 0%;
+    height: 100%;
+    background-color: #cfebf9;
+}
+.quizContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100%;
+}
+.quizContainer h2,h1,.hudPrefix{
+    background: black;
+    color: white;
+    padding: 10px;
+    font-size: 205%;
+    border-radius: 10px;
+}
+.leftSide{
+  width: 40%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  justify-content: space-evenly;
+  padding: 2%;
+  border-radius: 12px;
+  margin-top: 2%;
+}
+#question{
+  font-size: 140%;
+}
+.options{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 60%;
+    background-color: transparent;
+    /* background-color: red;; */
+}
+
+.choice-Container{
+    box-sizing: border-box;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;    
+    height: 8.0vh;
+    /* height: 100%; */
+    justify-content:flex-start;
+    /* background: #fff; */
+    border:0.5px solid #22ABE2;
+    border-radius: 5px;
+}
+.choice-Container:hover{
+    cursor: pointer;
+    /* background-color: #3AB4F2; */
+    box-shadow: 2px;
+    /* color: white; */
+    border:2px solid #22ABE2;
+    border-radius: 10px;
+}
+.choice-prefix{
+    padding:10px;
+    /* border: 2px solid yellow; */
+    background-color: #3AB4F2;
+    color: white;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+    border-radius: 5px;
+}
+.choice-prefix, .choice-text{
+    font-size: 95%;;
+}
+.choice-text{
+    margin-left: 5px;
+    padding-top: 3%;
+    width: 100%;
+}
+.hudMainTextScore{
+  font-size: 40px;
+}
+.buttons{
+    width:40vw;
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.btn-size{
+    width: 8vw;
+    height: 8vh;
+    font-size: 90%;
+}
+.btn-sizeSubmit{
+    width:30%;
+    height: 8vh;
+    font-size: 90%;
+}
+.correct{
+    background-color: #28a745;
+    color: white;
+}
+.incorrect{
+    background-color: #dc3545;
+    color: white;
+}
+@media screen and (max-width: 414px){
+  .quizContainer{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .leftSide{
+    width:99%;
+    height: 60vh;
+  }
+  #question{
+    font-size: 135%;
+  }
+  .choice-Container{
+    height:5vh;
+  }
+  .choice-prefix, .choice-text{
+    font-size: 136%;
+  }
+  .choice-text{
+    margin-left:33px;
+  }
+  #hud{
+    display: flex;
+    width: 100%;
+    flex-direction:row ;
+    height:10vh;
+  }#hud-item{
+    width: 40%;
+    height: 120%;
+  }
+  .quizContainer h2, h1, .hudPrefix{
+    padding: 0;
+  }
+  #progressBar{
+    margin-top: 0;
+  }
+  .hudPrefix{
+    font-size: 130%;
+  }
+  .hudMainTextScore{
+    width: inherit
+  }
+}

@@ -1,0 +1,113 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
+
+*{
+    margin: 0;padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+body{
+    background: url(./img/bg.jpg);
+}
+.endContainer{
+    /* border: 2px solid yellow; */
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    /* align-content: center ; */
+    /* background: url(../img/building-bg.jpg); */
+    background-image: linear-gradient(to top, #0367ff, #008bff, #00a9ff, #00c2ff, #00d9fd);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.containerInner{
+    /* border: 2px solid red; */
+    width: 30%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    margin-top: 10%;
+    background-color: white !important;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#finalScore{
+    border-radius: 10px;
+    padding: 2%;
+    background-color: black;
+}
+form{
+    color: white;
+    /* border:2px solid orange; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 40%;
+    width: 50%;
+    /* background-color: red;; */
+    align-items: center;
+  
+}
+input{
+    height:40%;
+    width: 80%;
+    border-radius: 5px;
+    outline: none;
+    text-align: center;
+}
+h1{
+    color: white;
+}
+.btn{
+    color: white;
+    /* background-color: #3AB4F2 !important; */
+    background-color: #3AB4F2;
+    color: white;
+    width: 40%;
+}
+.save{
+    width: 80%;
+}
+
+.btn:hover{
+    background-color: white;
+    box-shadow: none;
+    transform: none;
+    color: #3AB4F2;
+}
+/* end css */
+@media screen and (max-width: 416px){
+    .endContainer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .containerInner{
+        width: 90%;
+    height:66%;
+    }
+    input{
+        font-size: 120%;
+        width:130%;
+    }
+
+    #finalScore{
+        font-size: 60px;
+    }
+    .save{
+        height:35%;
+        font-size: 137%;
+    }
+    .containerInner a,.btn{
+        height:60px;
+        font-size: 20px;
+        width: 150px;
+    }
+    .containerInner a{
+        margin-bottom: 2%;
+    }
+}

@@ -1,0 +1,34 @@
+[
+    {
+        "question": "What is CSS?  Choose the correct answer.",
+        "choice1": "Cascading Style Sheets",
+        "choice2": "Cascading Sheet Styles",
+        "choice3": "Cascading Shower Sheets",
+        "choice4": "Cascading Shower Styles",
+        "answer": "1"
+    },
+    {
+        "question": "What is the full form of JS? Choose the correct option.",
+        "choice1": "Javascripter",
+        "choice2": "Javscript",
+        "choice3": "Typescript",
+        "choice4": "Java Syntax",
+        "answer": "2"
+    },
+    {
+        "question": "What is React JS?  Choose the correct answer.",
+        "choice1": "HTML Framework",
+        "choice2": "CSS Framework",
+        "choice3": "Javascript framework",
+        "choice4": "Javascript Library",
+        "answer": "4"
+    },
+    {
+        "question": "What is Bootstrap? Choose the correct answer.",
+        "choice1": "HTML Framework",
+        "choice2": "CSS Framework",
+        "choice3": "Database",
+        "choice4": "Javascript Framework",
+        "answer": "2"
+    }
+]
