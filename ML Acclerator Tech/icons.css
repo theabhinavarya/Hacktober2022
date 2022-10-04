@@ -1,0 +1,31 @@
+
+        .fa:hover {
+            opacity: 0.9;
+        }
+  
+        .fa-linkedin {
+            background: #007bb5;
+            color: white;
+        }
+  
+        .fa-pinterest {
+            background: #cb2027;
+            color: white;
+        }
+  
+        .fa-reddit {
+            background: #ff5700;
+            color: white;
+        }
+  
+        .fa {
+            padding: 20px;
+            font-size: 100px;
+            width: 60px;
+            text-decoration: none;
+            margin: 50px 80px;
+        }
+  
+        h1 {
+            color: green;
+        }
