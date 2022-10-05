@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Is your birthday lucky ?</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <h1>Is Your Birthday Lucky ? 🎂</h1>
+    <div class="container">
+      <label for="date-of-birth">Date Of Birth:</label>
+      <input type="date" id="date-pf-birth"  />
+      <label for="lucky-number">Lucky Number</label>
+      <input type="number" id="lucky-number" oninput="this.value = Math.abs(this.value)" />
+      <button id="check-number">Check Number</button>
+      <div id="output-box"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
