@@ -1,12 +1,10 @@
 # Welcome To Hacktober 2022 👋
 
-
-**Devkit** is a open source project which contains different code of frontend Projects with HTML, CSS, JS, REACT, ANGULAR and APIs etc. which makes your life easier for learning frontend. *You can submit your projects or raise/claim issues on existing projects*
+**Devkit** is a open source project which contains different code of frontend Projects with HTML, CSS, JS, REACT, ANGULAR and APIs etc. which makes your life easier for learning frontend. _You can submit your projects or raise/claim issues on existing projects_
 
 <p align="center">
     <a href="https://www.youtube.com/watch?v=nkuYH40cjo4"><img src="https://res.cloudinary.com/practicaldev/image/fetch/s---vBDpdf1--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/4u3t0x3fd6ikuzkro5mh.PNG" />
     </a>
-
 
 ### We have also take codes from Udemy,30 days of javascript and many more
 
@@ -14,18 +12,15 @@
 
 DevKit is open source collection of frontend project made with HTML, CSS, Javascript, React, APIs, Angular etc for uplifting Creative thinking over Binge watching tutorials.
 
-    
 ![Gif](https://user-images.githubusercontent.com/56559378/138270197-ef0e88a9-d2bf-4ef3-a413-d053acdec0a6.gif)
 
-
 ## 💥 How to Contribute?
-
 
 - Take Existing [Issues](https://github.com/anjali1102/Hacktober2022/issues) or create your own Issues! ⚙️
 - Get Assigned with Issues 🤖
 - Fork the Repo, then Clone forked repo.
 - Create a Pull Request. 🏃‍
-- Add *Screenshots/deployed link* in your project repo README.md🥺🥺
+- Add _Screenshots/deployed link_ in your project repo README.md🥺🥺
 - [Contribution Guide](https://github.com/anjali1102/Hacktober2021/blob/master/CONTRIBUTING.md)
 
 # Show some ❤️ by staring ⭐️ this repository.
@@ -37,7 +32,8 @@ DevKit is open source collection of frontend project made with HTML, CSS, Javasc
 <img height="300" width ="300" src = "https://reactjs.org/logo-og.png"></img>
 <img height="300" width ="300" src = "https://www.syncfusion.com/blogs/wp-content/uploads/2020/07/Top-6-Front-End-Web-Development-Tools-to-Increase-Your-Productivity-in-2020-1.jpg"></img>
 
-# Screenshots 
+# Screenshots
+
 <table>
   <tr>
     <td>Fire Particle</td>
@@ -72,15 +68,22 @@ DevKit is open source collection of frontend project made with HTML, CSS, Javasc
   <tr>
     <td>Joke generator</td>
     <td>Quote generator</td>
-    <td></td>
+    <td>REACT~PASSWORD~GENERATOR</td>
   </tr>
   <tr>
     <td><img src="https://github.com/anjali1102/Hacktober2022/blob/master/Project%20Screenshots/joke-generator.png" width=270 height=480></td>
-    <td><img src="https://github.com/anjali1102/Hacktober2022/blob/master/Project%20Screenshots/quote-generator.png" width=260 height=470></td>
-    <td></td>
+    <td><img src="https://github.com/anjali1102/Hacktober2022/blob/master/Project%20Screenshots/quote-generator.png" width=260 height=470></td>   
+    <td><img src="Project Screenshots/random_pass.png" width=260 height=470></td>
   </tr>
-    
-
+  <tr>
+    <td>Tesla Clone</td>
+    <td>Simple Login-register</td>
+    <td>Wikipedia Viewer</td>
+  </tr>
+  <tr>
+    <td><img src="Project Screenshots/tesla.png" width=270 height=480></td>
+    <td><img src="https://github.com/anjali1102/Hacktober2022/blob/master/Project%20Screenshots/simple-login-register-forgot_password.png" width=270 height=480></td>
+    <td><img src="https://github.com/anjali1102/Hacktober2022/blob/master/Project%20Screenshots/wikipedia-viewer.png" width=260 height=470></td>   
+  </tr>
 
  </table>
-

@@ -1,0 +1,34 @@
+[
+    {
+        "question": "What's Harshit favourite color? Choose the correct option.",
+        "choice1": "Red",
+        "choice2": "Sky Blue Shade",
+        "choice3": "Black",
+        "choice4": "Green",
+        "answer": "1"
+    },
+    {
+        "question": "Which dish Harshit likes the most? Choose the correct option.",
+        "choice1": "Golgappa",
+        "choice2": "Momo",
+        "choice3": "Ice-cream",
+        "choice4": "Baby Corn",
+        "answer": "2"
+    },
+    {
+        "question": "Who's Harshit favourite cricket player? Choose the correct option?",
+        "choice1": "MS Dhoni",
+        "choice2": "Rishabh Pant",
+        "choice3": "Rohit Sharma",
+        "choice4": "Virat Kohli",
+        "answer": "4"
+    },
+    {
+        "question": "What Harshit likes the most?",
+        "choice1": "Clothes",
+        "choice2": "Electronic gadgets",
+        "choice3": "Shoes",
+        "choice4": "Stationery",
+        "answer": "2"
+    }
+]

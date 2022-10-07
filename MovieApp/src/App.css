@@ -1,0 +1,272 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+body{
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+/* ALl Movies Part CSS */
+
+.movies-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+  justify-content: center;
+}
+
+.movies-card {
+  width: 20vw;
+  height: 25vh;
+  margin: 1rem;
+  color: white;
+  position: relative;
+  border-radius: 7px;
+}
+
+.movies-img {
+  width: 20vw;
+  height: 40vh;
+}
+
+.movies-title {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+.movies-title a {
+  font: bolder;
+  font-family: Arial, Helvetica, sans-serif, Geneva, Verdana, sans-serif;
+  background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(23, 251, 217));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.movies-title a:hover {
+  font-size: larger;
+}
+
+.movie-btn-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  /* position: relative;
+  bottom: -2vw; */
+}
+
+.movies-btn {
+  position: absolute;
+  bottom: 2rem;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* For NavBar */
+.nav-bar {
+  display: flex;
+  padding: 0.5;
+  margin-left: 1.8vw;
+  position: relative;
+  top: 10px;
+}
+
+.nav-bar h2 {
+  position: relative;
+  top: 0.5rem;
+  left: 4.5vh;
+  font-size: 1.8rem;
+  transform: rotate(0deg);
+
+}
+
+.nav-bar h1, h2 {
+  font-family: cursive;
+  /* font-size: 3em; */
+  color: white;
+  text-shadow: 0 0 0.05em rgb(255, 0, 0), 0 0 0.2em #ff0303, 0 0 0.3em #94008d;
+  transform: rotate(0deg);
+}
+
+.nav-bar-h1:hover {
+  text-shadow: 0 0 0.05em rgb(8, 0, 255), 0 0 0.2em #ff0303, 0 0 0.3em #0a9400;
+}
+
+.nav-bar-h2:hover {
+  text-shadow: 0 0 0.05em rgb(8, 0, 255), 0 0 0.2em #ff0303, 0 0 0.3em #0a9400;
+}
+
+
+
+
+/* General Class */
+.arrow:hover {
+  cursor: pointer;
+}
+
+.fontStyle {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.make-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.magic-color {
+  color: #94008d;
+}
+
+
+/* Banner Style */
+.banner-card {
+  width: 100vw;
+  margin-top: 1vh;
+  margin-bottom: 3vh;
+  position: relative;
+  height: 70vh;
+  color: white;
+}
+
+.banner-img {
+  height: 70vh;
+  width: 100vw;
+}
+
+.banner-title {
+  font: bold;
+  position: absolute;
+  top: 45vh;
+  left: 5vw;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.banner-text {
+  font: bold;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  position: absolute;
+  top: 55vh;
+  left: 5vw;
+  height: 4.5rem;
+  overflow: hidden;
+  margin-right: 5vw;
+}
+
+/* For Favourite part css */
+.movies-catagory {
+  padding: 3rem;
+}
+
+.favourires-table {
+  padding: 3rem;
+  overflow: auto;
+}
+
+.favourires-table input {
+  outline: none;
+  background-color: whitesmoke;
+  margin-left: 5px;
+}
+
+/* Movies Info Page */
+.infoHead {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.infoHead img {
+  margin-top: 2vh;
+  top: 5vh;
+  width: 50vw;
+  height: 50vh;
+  border-radius: 10px;
+}
+
+.infoHead li {
+  list-style: none;
+}
+
+.infoHead p {}
+
+@media screen and (max-width:400px) {
+
+  /* For Banner */
+  .banner-card {
+    height: 30vh;
+  }
+
+  .banner-img {
+    height: 30vh;
+  }
+
+  .banner-title {
+    top: 12vh;
+    left: 5vw;
+    font-size: 1.2rem;
+  }
+
+  .banner-text {
+    top: 17vh;
+    left: 5vw;
+    font-size: 0.9rem;
+    overflow: hidden;
+  }
+
+  /* For Movies Part */
+  .movies-card {
+    border: 2px solid black;
+    width: 40vw;
+    margin: 0.1rem;
+  }
+
+  .movies-img {
+    width: 40vw;
+  }
+
+  .movies-btn {
+    width: 80%;
+  }
+
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Quizzer</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/game.css" />
+
+      <!-- favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
+  <link rel="manifest" href="./img/site.webmanifest">
+  </head>
+  <body  id="stop-scrolling">
+    <div class="outerContainer">
+      <!-- <div class="preloader"></div> -->
+    <div class="container" id = "gameContainer">
+      <!-- <h1 class="Heading">Quiz App!</h1> -->
+      <h1 class="warning" style="color:red;background-color: white;;">*Note: Question will be moved to next question, as soon as you click an option</h1>
+      <div class="quizContainer">
+        <div class="leftSide">
+
+          <h2 id="question">What is HTML?</h2>
+          <div class="options">
+            <div class="choice-Container bbBox">
+              <p class="choice-prefix">A</p>
+              <p class="choice-text" data-number="1">Option1</p>
+            </div>
+            <div class="choice-Container bbBox">
+              <p class="choice-prefix">B</p>
+              <p class="choice-text" data-number="2">Option2</p>
+            </div>
+            <div class="choice-Container bbBox">
+              <p class="choice-prefix">C</p>
+              <p class="choice-text" data-number="3">Option3</p>
+            </div>
+            <div class="choice-Container bbBox">
+              <p class="choice-prefix">D</p>
+              <p class="choice-text" data-number="4">Option4</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="hud"  class="bbBox">
+          <div id="hud-item"  class="bbBoxLeft">
+            <h1 class="hudMainText" id = "questionCounter">.</h1>
+            <div id="progressBar">
+              <div id="progressBarFull"></div>
+            </div>
+           
+          </div>
+          <div id="hud-item"  class="bbBoxRight" >
+            <p class="hudPrefix">Score:</p>
+            <h1 class="hudMainTextScore" id = "score">0</h1>
+          </div>
+        </div>
+
+        
+      </div>
+      <div class="buttons">
+        <!-- <button type="button" id="prev" class="btn btn-primary btn-size">Prev</button>
+        <button type="button" id="next" class="btn btn-success btn-size">Next</button>
+        <button type="button" id="Danger" class="btn btn-danger btn-sizeSubmit">Submit</button> -->
+      </div>
+    </div>
+  </div>
+
+    <script src="./js/index.js"></script>
+    <script src="./js/preLoader.js"></script>
+  </body>
+</html>
