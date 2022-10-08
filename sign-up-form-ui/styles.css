@@ -8,6 +8,8 @@ body {
   background-color: white;
   font-family: "lato", sans-serif;
 }
+
+/* Puts the form in the center both horizontally and vertically. Sets its height to 100% of the viewport's height */
 .signupFrm {
     display: flex;
     justify-content: center;
@@ -32,6 +34,8 @@ body {
     width: 90%;
     margin-bottom: 17px;
   }
+
+  /* Style the inputs */
   .input {
     position: absolute;
     top: 0px;
@@ -46,9 +50,13 @@ body {
     background: none;
     z-index: 1;
   }
+
+  /* Hide the placeholder texts (a) */
   ::placeholder {
     color: transparent;
   }
+
+  /* Styling text labels */
   .label {
     position: absolute;
     top: 15px;
