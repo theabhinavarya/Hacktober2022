@@ -79,15 +79,18 @@ DevKit is open source collection of frontend project made with HTML, CSS, Javasc
     <td>Tesla Clone</td>
     <td>Simple Login-register</td>
     <td>Wikipedia Viewer</td>
-    
+      <td>expense tracker</td>
   </tr>
   <tr>
     <td><img src="Project Screenshots/tesla.png" width=270 height=480></td>
     <td><img src="![Screenshot (9)](https://user-images.githubusercontent.com/87799260/194675989-c1b6a130-9a53-43d2-bef1-0d21512df2ad.png)" width=270 height=480></td>
     <td><img src="https://github.com/anjali1102/Hacktober2022/blob/master/Project%20Screenshots/simple-login-register-forgot_password.png" width=270 height=480></td>
-    
+  <td><img src="https://github.com/ayushkedia05/react-expense-tracker/blob/a601d539b559e4ec9cc1e6a5f161d403be293d07/Screenshot%20from%202022-10-09%2011-08-15.png" width=260 height=470></td>  
+          
   </tr>
   <tr>
+    
+
     
     <td>Progress Steps</td>
   </tr>
