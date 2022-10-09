@@ -1,0 +1,31 @@
+.form-ele1{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: steelblue;
+}
+.form-ele{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px solid wheat;
+    height: 20rem;
+    width: 19rem;
+}
+.form-ele input{
+    height: 2rem;
+    width: 12rem;
+    border-radius: 10px;
+    border: .5px solid gray;
+    padding-left: 8px;
+    margin-top: 10px;
+
+}
+.sub-ele{
+    margin-top: 10px;
+    height: 2rem;
+    width: 5rem;
+    color: maroon;
+}
