@@ -4,89 +4,82 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tic Tac Toe</title>
+    <title>Tiktoe Game</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="style_tiktaktoe.css">    -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="style.css">
     <style>
-        li.nav{
-            padding:10px;
-            display:inline;
-            color: white;
-             }
-        ul.nav{
-            background-color: black;
-            margin:0px;
-            padding :10px;
-        }
-        a.nav{
-            color: white;
-    
-        }
-        h1.title{
-            font-style: oblique;
-            display: grid;
-            justify-content: center;
-        }
-        body{
-            background-repeat: no-repeat;
-            background-size:1100px 500px;
-             background-color: rgb(251, 236, 210);
-        }
-        button{
-            background-color: blue;
-            color:white;
-        }
-        a{
-            color:white;
-        }
-
+       
     </style>
 </head>
-<body  background="tik.jpeg" >
-    <nav>
-     <ul class="nav">
-    <li class="nav"><a class="nav" href="index.html">Home</a></li>
-    <li class="nav"><a class="nav" href="game.html">Game</a></li>
-   
-    </ul>
-    </nav>
+<body>
+    <div class="container">
+        <div class="section1">
+            <div class="description">
+                <div class="content">
+                   <div class="heading">Tic-Tac-Toe</div>
+                    Tic-Tac-Toe is a fun game that you can play any time and anywhere as long as you have a piece of paper, a pencil, and an
+                    opponent. Tic-tac-toe is a zero-sum game, which means that if both players are playing their best, then neither player
+                    will win. However, if you learn how to play tic-tac-toe and master some simple strategies, then you'll be able to not
+                    only play but win the majority of the time. If you want to know how to play tic-tac-toe, then see Step 1 to get started.
+                </div> 
+            </div>
+            <div class="section12">
+                <div class="introOfPlayer">
+                    <div class="label_section">
+                        <label for=""> First   Player</label>
+                        <label for=""> Second Player</label>
+                    </div>
+                    <div class="inputSection" style="color:black;">
+                        <input id="player1"type="text" placeholder="name">
+                        <input id="player2" type="text" placeholder="name">
+                    </div>
+                    </div>
+                    <div class="div_startGame section13">
+                        <a  id="StartGameBtn"  href="#mytext"> Start Game</a>
+                      
+                    </div>
+                </div>
+            
+         </div>
 
-    <div>
-        <h1 class="title">TIC TAC TOE</h1>
-    </div>
+ <!-- <img  id="useImage" src"red_cross.png" width="200px" alt=""> -->
 
-    <div>
-        Tic Tak Toe is a very common game among children .It is helpful in developing kids <br>brain 
-         In which we used to play a lot of games.Its a very quick game ,not so time taking.
+        <div id="section2">
+            
+            <div class="section2_inside">
+                <div class="heading">
+                    <div id="mytext" style="color:orangered; font-size:50px">
+                    <span id="extra"></span>
+                    </div>
+                </div>
+                <div id="row1" >
+                    <div id="r1c1" class="item">Click</div>
+                    <div id="r1c2" class="item">Click</div>
+                    <div id="r1c3" class="item">Click</div>
+                </div>
+                <div id="row2">
+                    <div id="r2c1" class="item">Click</div>
+                    <div id="r2c2"class="item">Click</div>
+                    <div id="r2c3" class="item">Click</div>
+                </div>
+                <div id="row3">
+                    <div id="r3c1" class="item">Click</div>
+                    <div id="r3c2" class="item">Click</div>
+                    <div id="r3c3" class="item">Click</div>
+                </div>
+            </div>
     </div>
-<br>
-    <div>
-    Tic-tac-toe is a fun game that you can play any time and anywhere as long as you <br>
-    have a  piece of paper, a pencil, and an opponent. Tic-tac-toe is a zero sum game,  <br>
-    which means that if both players are playing their best, then neither player will win. <br>
-     However, if you learn how to play tic-tac-toe and master some simple strategies,  <br>
-     then you'll be able to not only play, but to win the majority of the time. 
 </div>
-    <div>
-        <h2>How to play</h2>
-        </div>
 
-        
-        <ul>
-            <li>Choose your opponent</li>
-            <li>Make three in a row horizontally, vertically, or diagonally to win</li>
-            <li>Watch your opponent and block them if they get 2 in a row</li>
-            <li>Try a harder mode to keep it interesting</li>
-            <li>After complete the game ,press reset button and play another game</li>
-        </ul>
+            
 
-    </div>
-    <div>
-        <button><a href="game.html">Lets play the Game</a></button>
-    </div>
+<script src="script_method3.js"></script>
 
-    
 </body>
 </html>
-
-
-
-
