@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COVID-19 Survey Form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body> 
+  
+<div class="container">
+    <header class="header">
+      <h1 id="title">Covid-19 vaccine survey</h1>
+  
+  <p id="description">thanks for taking time to help us improve our service.</p>
+    </header>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">First Name</label>
+      <input
+             type="text"
+             name="name"
+             id="name"
+             class="form-control"
+             placeholder="Enter your first name"
+             required />
+             <br>
+             <label id="name-label" for="name">Last Name</label>
+             <input
+             type="text"
+             name="name"
+             id="name"
+             class="form-control"
+             placeholder="Enter your Last name"
+             required />
+             <br>
+             <label id="name-label" for="name">Contact number</label>
+             <input
+             type="number"
+             name="name"
+             id="name"
+             class="form-control"
+             placeholder="ex: 9023289211"
+             required />
+    </div>
+    
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input 
+             type="email"
+             name="email"
+             id="email"
+             class="form-control"
+             placeholder="Enter your email"
+             required
+             />
+    </div>
+    <div class="form-group">
+         <label id="number-label" for="number">
+           Age</label>
+      <input
+             type="number"
+             name="age"
+             id="number"
+             min="18"
+             max="80"
+             class="form-control"
+             placeholder="age"/>
+      </div>
+  <div class="form-group">
+    <p>What is you employment status?</p>
+    <select id="dropdown" name="status" class="form-control" required>
+      <option disabled selected value>Select Current status</option>
+    <option value="Student"> Student</option>  
+    <option value="employed">Employed</option>  
+  <option value="self-employed"> Self employed</option>  
+      <option value="unemployed">Unemployed</option> 
+      <option value="not-looking-for-a-job">Not looking for a job</option>  
+    </select>
+    </div>
+    
+    <div class="form-group">
+      <p>Gender</p>
+      <label>
+        <input name="school" value="yes"type="radio"
+               class="input-radio"checked/>Male</label>     
+      
+       <label>
+        <input name="school" value="no"type="radio"
+               class="input-radio"checked/>Female</label>     
+        
+    </div>
+    
+    <div class="form-group">
+      <p>Are you planning to get the COVID-19 vaccine ?</p>
+      <label>
+        <input name="vaccine" value="yes"type="radio"
+               class="input-radio"checked/>Yes </label>     
+      
+        <label>
+        <input name="vaccine" value="no"type="radio"
+               class="input-radio"/>No </label>     
+      
+        <label>
+        <input name="vaccine" value="not-sure"type="radio"
+               class="input-radio"/>Not sure yet</label>     
+      
+    </div>
+    
+    <div class="form-group">
+      <p>Which of the followings define you concerns about getting the vaccine?<span class="clue">(check all that apply)</span></p>
+      
+      <label> <input name="concerns" value="" type="checkbox" class="input-checkbox"/>I have concerns about the vaccine's side effects, long term safety and efficacy</label>
+      
+       <label> <input name="concerns" value="religion" type="checkbox" class="input-checkbox"/>I have religious reason</label>
+      
+        <label> <input name-"concerns" value="Solution" type="checkbox" class="input-checkbox"/>I don't belive it will be the solution for coronavirus. </label>
+      
+         <label> <input name-"concerns" value="health" type="checkbox" class="input-checkbox"/>I belive that it will have negative effects on my health. </label>
+      
+         <label> <input name-"concerns" value="other" type="checkbox" class="input-checkbox"/>Other</label>
+    </div>
+    
+    <div class ="form-group">
+      <p> Please explain your reasons</p>
+      <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your reason here..."></textarea></div>
+    
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button"> Submit</button>
+      
+    </div>
+  </form>
+  </div>
+</body>
+</html>
