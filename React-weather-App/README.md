@@ -70,3 +70,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ![01](https://user-images.githubusercontent.com/56557700/194756282-185b5e71-6a84-489c-a64d-55d0cc817185.png)
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+Deployed Link : https://reactweatherapp3.netlify.app/
