@@ -1,0 +1,26 @@
+.ver-bor{
+    border: 2px dashed gray;
+    height: 50px;
+    width: 0px;
+    margin-left: 10px;
+}
+.care-ele{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+.care-ele1{
+    display: flex;
+    margin-top: 20px;
+}
+.care-ele1 h2{
+    font-weight: 400;
+}
+.care-img{
+    background-image: url("./webpage.png");
+    background-size: cover;
+    height: 400px;
+    width: 400px;
+    margin-right: 450px;
+}
