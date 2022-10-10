@@ -1,0 +1,107 @@
+*{
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    /* font-family: 'Courier New', Courier, monospace; */
+    width: 100%;
+    height: 100vh;
+}
+
+#parallax{
+    font-style: italic;
+    /* font-family:'Courier New', Courier, monospace; */
+    font-variant:small-caps;
+    
+   
+}
+h2{
+    /* font-size: 40px; */
+    background: #eee;
+    
+    text-shadow: 0 0 3px #22f3fe, 0 0 5px rgb(10, 10, 10);
+    font-weight: bolder;
+    color: white;
+}
+h2:hover{
+    zoom: 1;
+}
+@media only screen and(max-width: 700px)
+{
+   .div{
+       font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   }
+}
+
+div:nth-child(1)
+{
+    background-image: url(https://www.summitclimb.com/images/sliders/slider1588593625_summitclimb-expedition.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+div:nth-child(2){
+    background-image: url(https://assets.rmiguides.com/_includes/_images/programs/slideshow/21-3.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+div:nth-child(3)
+{
+    background-image: url(https://d3rrfy0o57uet0.cloudfront.net/wp-content/uploads/2019/03/12-Elbrus.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+div:nth-child(4)
+{
+    background-image: url(https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/denali-from-denali-viewpoint-south-steve-wolfe.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+div:nth-child(5)
+{
+    background-image: url(https://th.bing.com/th/id/R.50255923e4eb49c048a3163c04f7ac9c?rik=e8WKioxYHqfDGQ&riu=http%3a%2f%2fwww.andes.org.uk%2fexpeditions-and-explorations%2faconcagua-sunrise.jpg&ehk=4AeXTc8ZYDiIDfwO6OQot%2fYjj5XU9mfVfv6V5JLLQ3I%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1);
+    background-size: cover;
+    background-attachment: fixed;
+}
+div:nth-child(6)
+{
+    background-image: url(https://th.bing.com/th/id/R.cbb9ae2223f17a401e46ff0eb70d011e?rik=Q5bTgYmtmiKhsQ&riu=http%3a%2f%2f2.bp.blogspot.com%2f-6gIUhXxhwEU%2fUbh7l4fIiyI%2fAAAAAAAAJI0%2fCeOacploJVA%2fs1600%2fMount-Everest.jpg&ehk=hCm9RuznR%2bmy66I7Q%2fvtiUMRQlcjUvcjEaQ0GQKslm4%3d&risl=&pid=ImgRaw&r=0);
+    background-size: cover;
+    background-attachment: fixed;
+}
+div:nth-child(7)
+{
+    background-image: url(https://cdn.britannica.com/33/153433-050-F76BDF75/Sunrise-Mount-Kilimanjaro-Tanzania.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#btn1{
+    position: static;
+    border-radius: 15px;
+    font-size: larger;
+    border: black;
+    padding: 1%;
+   
+    margin-left: 3%;
+    font-style: italic;
+    border-color: black;
+    font-weight: 300;
+    
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: black;
+    
+}
