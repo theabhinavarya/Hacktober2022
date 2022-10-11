@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Explora&display=swap" rel="stylesheet">
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico">
+    <title>Home Page</title>
+
+</head>
+<body>
+    <div id="parallax"><h2> WORLD FAMOUS SUMMITS</h2>
+    </div>
+    <div>
+        <h2>VINSON MASSIF </h2>  <button id="btn1"><a href="https://www.britannica.com/list/7-or-8-summits-the-worlds-highest-mountains-by-continent"  target="_blank">Learn More >></a></button>
+        
+        <br><br><br>
+        <!-- <div><button class="btn1">LEARN MORE</button></div> -->
+    </div>
+        
+    
+    <div><h2>MOUNT ELBRUS</h2> <button id="btn1"><a href="https://www.britannica.com/list/7-or-8-summits-the-worlds-highest-mountains-by-continent" target="_blank">Learn More >></a></button></div>
+    <div><h2>DENALI</h2><button id="btn1"><a href="https://www.britannica.com/list/7-or-8-summits-the-worlds-highest-mountains-by-continent" target="_blank">Learn More >></a></button></div>
+    <div><h2>MOUNT ACONCAGUA</h2><button id="btn1"><a href="https://www.britannica.com/list/7-or-8-summits-the-worlds-highest-mountains-by-continent" target="_blank">Learn More >></a></button></div>
+    <div><h2>MOUNT EVEREST</h2><button id="btn1"><a href="https://www.britannica.com/list/7-or-8-summits-the-worlds-highest-mountains-by-continent" target="_blank">Learn More >></a></button></div>
+    <div><h2>MOUNT KHILIMANJARO</h2><button id="btn1"><a href="https://www.britannica.com/list/7-or-8-summits-the-worlds-highest-mountains-by-continent" target="_blank">Learn More >></a></button></div>
+    
+    <section class="banner"></section>
+    <script type="text/javascript">
+        window.addEventListner("scroll",function()
+    {
+        var header=document.querySelector("header");
+        header.lassList.toggle("sticky")
+    })
+    </script>
+
+    <script src="main.js"></script>
+    
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    
+    }
+    body{
+        background: #000;
+        min-height: 200vh;	
+    }
+    header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+    justify-content: space-between;
+    align-items:center;
+    transition: 0.6s;
+    padding: 40px 100px;
+    z-index: 1000;
+    }
+    header.sticky{
+    padding: 5px 100px;
+    background: #ffff;
+    }
+    h2{
+        background-color: transparent;
+    }
+    header .logo{
+        position:relative;
+        font-weight: 700;
+    font-size: 2em;
+    text-transform:uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+    
+    }
+    
+    header ul{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    header ul li{
+        position: relative;
+        margin: 0 15px;
+        text-decoration: none;
+        color: #fff;
+        letter-spacing: 2px;
+        transition: 0.6s;
+    }
+    .banner{
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        background: url();
+    background-size:cover;
+    }
+    </style>
+</body>
+</html>

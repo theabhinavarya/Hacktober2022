@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.img{
+    background-image: url("./doc.jpg");
+    background-size: cover;
+    width: 100wh;
+    height: 100vh;
+}
+.data-ele{
+    
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.line-ele{
+    width: 700px;
+    font-weight: 400;
+    font-size: 40px;
+    margin-left: 120px;
+}
+.para-ele{
+    margin-top: 20px;
+    color: gray;
+    margin-left: 120px;
+    font-weight: 900;
+
+}
+.btn{
+    margin-top: 100px;
+    width: 250px;
+    height: 50px;
+    font-weight: 100;
+    font-size: 25px;
+    border-radius: 15px;
+    background-color: #17353d;
+    color: white;
+    border: none;
+    
+}

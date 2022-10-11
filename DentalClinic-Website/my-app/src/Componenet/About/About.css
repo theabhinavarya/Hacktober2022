@@ -1,0 +1,42 @@
+.about-img{
+    background-image: url("./doc3.png");
+    background-size: cover;
+    width: 400px;
+    height: 400px;
+}
+.img-box{
+    margin-left: 300px;
+}
+.about-ele{
+    display:  flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid red; */
+    margin-top: 40px;
+}
+.about2{
+    border: 1px solid gray;
+    height: 300px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: wheat;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.9);
+}
+.things{
+    margin-top: 20px;
+}
+.things2{
+    display: flex;
+    margin-top: 10px;
+    
+}
+.about-h1{
+    font-weight: 300;
+}
+.circle{
+    color: aqua;
+    margin-right: 30px;
+}
