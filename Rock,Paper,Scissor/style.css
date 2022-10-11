@@ -1,5 +1,6 @@
 body {
     background-color: rgb(183, 243, 210);
+    /*style for background by Ligia*/
   }
 
   h1 {
@@ -7,12 +8,14 @@ body {
     font-size: 2.5rem;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: black;
+    /*style for title by Ligia*/
   }
 
   p{
     font-size: 1.5rem;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
     color: black;
+    /*style for Human and Robot by Ligia*/
   }
 
   .choices {
