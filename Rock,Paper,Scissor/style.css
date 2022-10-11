@@ -1,11 +1,24 @@
 body {
-    background-color: rgb(4, 87, 41);
+    background-color: rgb(183, 243, 210);
   }
-  
+
+  h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+  }
+
+  p{
+    font-size: 1.5rem;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+    color: black;
+  }
+
   .choices {
     display: flex;
+    margin: auto;
     justify-content: center;
-    size: cm;
     /* center me agyi emojis */
   }
   
@@ -15,9 +28,10 @@ body {
     outline: none;
       /* boxes emojis ke peeche se remove hogye */
     cursor: pointer;
-    font-size: 2rem;
+    font-size: 5rem;
     transition: 100ms;
       /* will hover smoothley */
+   
   }
   
   .choice:hover {
@@ -25,12 +39,14 @@ body {
   }
   
   .results {
-    margin-top: 1rem;
+    margin-top: 5rem;
     display: grid;
-    justify-content: center;
+    font-size: 2rem;
      /* Human or robot center hogya */
     grid-template-columns: repeat(2, 1fr);
       /* columns bngye  */
     justify-items: center;
     align-items: center;
   }
+
+ 
