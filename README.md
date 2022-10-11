@@ -95,9 +95,7 @@ DevKit is open source collection of frontend project made with HTML, CSS, Javasc
     <td>Progress Steps</td>
   </tr>
    <tr>
-   <td>
-   ![advice genrator](https://user-images.githubusercontent.com/24995094/195181365-c0869890-03c7-4d57-9617-2ffb9bacf9f4.png)
-   </td>
+   <td><img src="https://user-images.githubusercontent.com/24995094/195181365-c0869890-03c7-4d57-9617-2ffb9bacf9f4.png" width=270 height=480></td>
     <td><img src="https://github.com/anjali1102/Hacktober2022/blob/master/Project%20Screenshots/wikipedia-viewer.png" width=260 height=470></td>   
   </tr>
 
