@@ -1,0 +1,103 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+.detail{
+    /* text-align: center; */
+    padding:5%;
+    margin:5% 0px;
+    font-weight: bold;
+    font-size: 30px;
+
+}
+body{
+    border:2px solid green;
+}
+.container{
+    border:2px solid red;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* text-align: center; */
+    /* justify-content: center; */
+}
+.inside_container{
+    /* border:2px solid green; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+label{
+    /* padding:5%; */
+    /* margin:10%; */
+    /* margin: 15px;     */
+        padding: 5px;
+    font-size: 2.5vh;
+}
+input{
+    /* margin:15px; */
+    padding: 5px;
+    margin: 8px 0px;
+    font-size: 20px;
+    /* margin:5%; */
+    /* padding: 5%; */
+    border:1px solid black;
+        border-radius: 5px;
+}
+.labels{
+    display:flex;
+    flex-direction: column;
+    margin-right: 30px;
+    /* border:2px solid red; */
+}
+.input_fields{
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid red; */
+}
+.input_fields input{
+    /* width:30%; */
+}
+.passwordChecker{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+
+}
+.submitButton{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    /* font-size: 30px; */
+    /* padding: 10px; */
+    
+}
+#check{
+padding: 10px;
+    margin: 20px;
+    font-size: 30px;
+    border-radius: 10px;
+
+}
+#check :hover{
+    background-color: yellow;
+}
+.passwordChecker{
+/* border: 2px solid blue; */
+}
+.item{
+    /* margin:10%; */
+    margin: 20px;
+    border:2px solid black;
+    font-size: 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
