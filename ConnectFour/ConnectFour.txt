@@ -1,2 +1,0 @@
-A simple game of connect four created using js and html 
-css it is a two player game where the first player to match a row of 4 wins
