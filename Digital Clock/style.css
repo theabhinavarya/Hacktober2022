@@ -19,6 +19,7 @@ body{
     font-family: 'Open Sans',sans-serif;
     text-align: center;
     font-size: 60px;
+    margin-top: 20px;
 }
 .clock{
     width: 550px;
@@ -50,4 +51,11 @@ body{
     font-weight: bolder;
     font-size: 60px;
     color: #ffffff;
+}
+
+@media only screen and (max-width : 600px) {
+    .clock{
+        width: 100%;
+        padding: 10px;
+    }
 }
