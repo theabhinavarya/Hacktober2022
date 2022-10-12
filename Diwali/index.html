@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FESTIVAL OF DEEPAVALI</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width: 1100px)" href="phone.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fruktur&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section id="navbar">
+        <header>
+            DIWALI: THE FESTIVAL OF LIGHT
+        </header>
+        <nav>
+            <li>
+                <a href="index.html">HOME</a>
+            </li>
+            <li>
+                <a href="history.html">HISTORY</a>
+            </li>
+            <li>
+                <a href="food.html">FOOD</a>
+            </li>
+            <li>
+                <a href="rangoli.html">RANGOLI</a>
+            </li>
+            <li>
+                <a href="mehandi.html">VIDEOS</a>
+            </li>
+            <li>
+                <a href="fire_crackers.html">FIRE CRACKERS</a>
+            </li>
+        </nav>
+    </section>
+    <section class="panati-roller">
+        <div class="box">
+            <marquee behavior="" direction="alternate">
+            <img src="assets/panti.png" alt="">
+            <img src="assets/panti.png" alt="">
+            <img src="assets/panti.png" alt="">
+            <img src="assets/panti.png" alt="">
+            <img src="assets/panti.png" alt="">
+            <img src="assets/panti.png" alt="">
+            <img src="assets/panti.png" alt="">
+            <img src="assets/panti.png" alt="">
+            <img src="assets/panti.png" alt="">
+            <img src="assets/panti.png" alt="">
+            <img src="assets/panti.png" alt="">
+            <img src="assets/panti.png" alt="">
+            <img src="assets/panti.png" alt="">
+            <img src="assets/panti.png" alt="">
+            <img src="assets/panti.png" alt="">
+            <img src="assets/panti.png" alt="">
+            <img src="assets/panti.png" alt="">
+            <img src="assets/panti.png" alt="">
+            <img src="assets/panti.png" alt="">
+            <img src="assets/panti.png" alt="">
+            <img src="assets/panti.png" alt="">
+        </marquee>
+        </div>
+    </section>
+    <section class="slider">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="./assets/udayaditya-barua-xisPXJqwQkA-unsplash.jpg" class="slider-img"
+                style="width:100%; height: 550px;">
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="./assets/nithin-p-john-spKH2IQKvnc-unsplash.jpg"class="slider-img"
+                style="width:100%; height: 550px;">
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="./assets/jyoti-singh-SOXx3b51s1k-unsplash.jpg" class="slider-img"
+                style="width:100%; height: 550px;">
+            </div>
+        </div>
+        <br>
+        <div id="dot-style">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+        <script>
+            var slideIndex = 0;
+            showSlides();
+            function showSlides() {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) { slideIndex = 1 }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+                setTimeout(showSlides, 2500); // Change image every 3 seconds
+            }
+        </script>
+    </section>
+    <section class="panati-roller1">
+        <div class="box">
+            <marquee behavior="" direction="alternate">
+            <img src="assets/panti.png" alt="">
+            <img src="assets/panti.png" alt="">
+            <img src="assets/panti.png" alt="">
+            <img src="assets/panti.png" alt="">
+            <img src="assets/panti.png" alt="">
+            <img src="assets/panti.png" alt="">
+            <img src="assets/panti.png" alt="">
+            <img src="assets/panti.png" alt="">
+            <img src="assets/panti.png" alt="">
+            <img src="assets/panti.png" alt="">
+            <img src="assets/panti.png" alt="">
+            <img src="assets/panti.png" alt="">
+            <img src="assets/panti.png" alt="">
+            <img src="assets/panti.png" alt="">
+            <img src="assets/panti.png" alt="">
+            <img src="assets/panti.png" alt="">
+            <img src="assets/panti.png" alt="">
+            <img src="assets/panti.png" alt="">
+            <img src="assets/panti.png" alt="">
+            <img src="assets/panti.png" alt="">
+            <img src="assets/panti.png" alt="">
+        </marquee>
+        </div>
+    </section>
+</body>
+</html>
