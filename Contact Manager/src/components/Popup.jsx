@@ -76,7 +76,7 @@ clickHandler()
           </div>
           ):
           (<button
-            onClick={clickHandler&&submit}
+            onClick={clickHandler&&dataAdd.name!=''&&submit}
             className="mr-2 w-[4rem] h-[2rem] rounded-md border-[1.5px] border-black bg-white"
           >
             Add
