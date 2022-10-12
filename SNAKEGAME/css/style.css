@@ -5,7 +5,7 @@
 }
 
 .body{
-    background: url("../img.jpg"); 
+    background: url("../img/bg.jpg"); 
     min-height: 100vh;
     background-size: 100vw 100vh;
     background-repeat: no-repeat;
@@ -16,8 +16,7 @@
 
 #scoreBox{
     position: absolute;
-    color:rgb(14, 245, 14);
-    top: 35px;
+    top: 9px;
     right: 200px;
     font-size: 39px;
     font-weight: bold;
@@ -26,8 +25,7 @@
 
 #hiscoreBox{
     position: absolute;
-    color:rgb(14, 245, 14);
-    top: 100px;
+    top: 59px;
     right: 140px;
     font-size: 39px;
     font-weight: bold;
@@ -35,11 +33,10 @@
 }
 
 #board{
-    background: linear-gradient(black,green,black);
-    opacity: 62%;
+    background: linear-gradient(rgb(170, 236, 170), rgb(236, 236, 167));
     width: 90vmin;
     height: 92vmin;
-    border: 2px solid gray;
+    border: 2px solid black;
     display: grid;
     grid-template-rows: repeat(18, 1fr);
     grid-template-columns: repeat(18, 1fr);
@@ -61,5 +58,5 @@
 .food{
     background: linear-gradient(red, purple);
     border: .25vmin solid black;
-    border-radius: 30px;
+    border-radius: 8px;
 }

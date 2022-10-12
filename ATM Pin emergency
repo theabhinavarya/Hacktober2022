@@ -1,0 +1,22 @@
+#include <stdio.h>
+void main()
+{   int n,a,r=0,p;
+    printf("\n Enter the number = ");
+    scanf("%d",&n);
+   p=n;
+   while(n>0)
+   {
+       a=n%10;
+       r=r*10+a;
+       n=n/10;
+   }
+    printf("\n the reversed number is= %d",r);
+    if(p==r)
+    {
+         printf("\n You are in trouble");
+    }
+    else
+    {
+        printf("\n You have alarmed the police");
+    }
+}
