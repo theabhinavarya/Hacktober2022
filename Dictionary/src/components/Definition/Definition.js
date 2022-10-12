@@ -15,7 +15,6 @@ import {
   ArrowBack,
   BookmarkAdded,
   BookmarkBorder,
-  BorderAllRounded,
   PlayArrow,
 } from "@mui/icons-material";
 import { useParams, useNavigate } from "react-router-dom";
@@ -130,7 +129,7 @@ const Definition = ({ bookmarks, addBookmarks, removeBookmarks }) => {
               style={{
                 boxShadow: "0px 10px 25px rgba(0,0,0,0.05",
                 backgroundColor: "#322544",
-                padding: 2,
+                padding: 15,
                 borderRadius: 2,
                 marginTop: 3,
               }}
