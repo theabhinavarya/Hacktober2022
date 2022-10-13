@@ -6,12 +6,13 @@ const User = require("../Model/user");
 const user = require("../Model/user");
 
 router.post("/register", async (req, res) => {
+  // verifying data entered
   const { error } = registerValidation(req.body);
   if (error) res.status(400).send(error.details[0].message);
 
   const emailExist = await User.findOne({ email: req.body.email });
   if (emailExist) return res.status(400).send("Email already exists!");
-
+  // hashing password using library
   const salt = await bcrypt.genSalt(8);
   const hashPass = await bcrypt.hash(req.body.password, salt);
 
@@ -30,6 +31,7 @@ router.post("/register", async (req, res) => {
 });
 
 router.post("/signin", async (req, res) => {
+  // data verification
   const { error } = loginValidation(req.body);
   if (error) res.status(400).send(error.details[0].message);
 
@@ -42,13 +44,8 @@ router.post("/signin", async (req, res) => {
   //create jwt
   const token = jwt.sign({ _id: userCheck._id }, process.env.TOKEN_SECRET);
 
-  // const myHeaders = new Headers();
-
-  // myHeaders.set("auth-token", token);
-
+  // storing jwt in cookies of website
   res.header("auth-token", token).send(token);
-
-  // res.send("Logged In!!");
 });
 
 module.exports = router;

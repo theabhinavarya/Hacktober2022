@@ -1,5 +1,5 @@
 const joi = require("joi");
-
+// validation of entered data
 function registerValidation(data) {
   const schema = joi.object({
     name: joi.string().required().min(2),
