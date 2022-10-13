@@ -1,16 +1,16 @@
-import React, { useState } from "react";
+import React, {useRef} from "react";
 import { Box, Typography, FilledInput, IconButton } from "@mui/material";
 import img from "../../images/dictionary-log.png";
 import SearchIcon from "@mui/icons-material/Search";
 import BookMarkIcon from "@mui/icons-material/BookmarkAddOutlined";
 import { useNavigate, Link } from "react-router-dom";
 const Home = () => {
-  const [word, setWord] = useState("");
+  const wordRef = useRef(null);
   const navigate = useNavigate();
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log(word);
-    const trimmedWord = word.trim().toLowerCase();
+    console.log(wordRef.current.value);
+    const trimmedWord = wordRef.current.value.trim().toLowerCase();
 
     if (!trimmedWord) return;
     navigate(`/search/${trimmedWord}`);
@@ -35,15 +35,14 @@ const Home = () => {
         Dictionary
       </Typography>
       <Typography>Get Meanings of words</Typography>
-      <Box sx={{ width: "360px" }}>
+      <Box sx={{ width: "360px"}}>
         <form onSubmit={handleSubmit}>
           <FilledInput
-            value={word}
-            onChange={(event) => setWord(event.target.value)}
+            inputRef={wordRef}
             placeholder="Search Word"
             sx={{
               my: 5,
-              marginLeft: 5,
+              width : '100%',
               borderRadius: "5px",
               border: "2px solid white",
               "& .MuiFilledInput-input": {
