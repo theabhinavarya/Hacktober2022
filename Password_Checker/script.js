@@ -15,7 +15,8 @@ let Bool_specialSymbol;
 let Bool_length;
 let arr = [];
 let var1;
-let str="";
+let str = "";
+let green = "#38E54D";
 
 // const KeyPress = () => {
 //     // arr = arr + event.key;
@@ -53,30 +54,30 @@ pass.addEventListener("keydown", function (event) {
     for (let i = 0; i < str.length; i++) {
         var1 = str.codePointAt(i);
         if (str.length == 8) {
-            length.style.background = "green ";
+            length.style.background = green;
             length.style.color = "white";
             Bool_length = true;
         
         }
         if (var1 >= 65 && var1 <= 90) {
-            capital.style.background = "green ";
+            capital.style.background = green;
             capital.style.color = "white";
             Bool_capital = true;
         }
         else if (var1 >= 97 && var1 <= 122) {
-            small.style.background = "green ";
+            small.style.background = green;
             small.style.color = "white";
            Bool_small = true;
         }
         else if (var1 >= 48 && var1 <= 57) {
-            number.style.background = "green ";
+            number.style.background = "#9CFF2E";
             number.style.color = "white";
             Bool_number = true;
 
 
         }
         else {
-            specialSymbol.style.background = "green ";
+            specialSymbol.style.background = green;
             specialSymbol.style.color = "white";
             Bool_specialSymbol = true;
 
