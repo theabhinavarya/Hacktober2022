@@ -1,11 +1,26 @@
+*{
+    margin: 0;
+}
 .container{
     padding: 10px;
 }
+
+body{
+    background-color: #FAF7F0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .form-control{
     width: 500px;
 }
 #img_preview{
     margin-bottom: 10px;
+    height: 500px;
+    width: 500px;
+    border: 1px solid black;
+    object-fit: cover;
 }
 #label{
     display: inline-block;
