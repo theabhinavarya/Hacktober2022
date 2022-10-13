@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<style>
+		body {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			align-content: center;
+			justify-content: center;
+			font-family: 'Roboto', sans-serif;
+			text-align: center;
+		}
+
+		.container {
+			display: flex;
+			width: 95%;
+		}
+
+		.content {
+			border-radius: 5px;
+		}
+
+		.one {
+			background: url(./images/southafricaflag.jpg);
+		}
+
+		.two {
+			background: url(./images/wildlife.jpg);
+		}
+
+		.three {
+			background: url(./images/winelands.jpg);
+		}
+
+		.four {
+			background: url(./images/diamonds.jpg);
+		}
+
+		.five {
+			background-image: url(./images/mountain.jpg);
+		}
+
+		/* Background properties and
+		transition effect to section */
+		.section {
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+
+			height: 80vh;
+			cursor: pointer;
+			flex: 0.2;
+			margin: 8px;
+			position: relative;
+			transition: all 0.7s ease-out;
+			border-radius: 5px;
+			padding: 20px;
+			display: flex;
+			flex-direction: row;
+			text-align: center;
+
+		}
+
+		.section .content {
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+			height: 100%;
+			background: rgba(0, 0, 0, 0.4);
+			justify-content: center;
+			padding: 10px;
+			opacity: 0;
+		}
+
+		.section .content h1 {
+			color: white;
+
+		}
+
+		.section .content p {
+			color: white;
+			font-size: 20px;
+			
+		}
+
+		.section.active {
+			flex: 3;
+		}
+		.section.active .content{
+			opacity: 1;
+		}
+		
+	</style>
+	<title>Expanding Cards</title>
+</head>
+
+<body>
+
+	<section class="header">
+		<div class="content">
+			<h1>South Africa</h1>
+			<p>It's one of four favourite travel destinations in the world. You could explore this spellbinding land for
+				weeks and only scratch the surface</p>
+		</div>
+	</section>
+	<!-- Container -->
+	<div class="container">
+
+		<!-- Div with section and active -->
+		<div class="section one active">
+			<div class="content">
+				<h1>The rainbow nation</h1>
+				<p>SA is linguistically & culturally diverse with 11 official languages</p>
+			</div>
+		</div>
+
+		<!-- All another div with section -->
+		<div class="section two">
+			<div class="content">
+				<h1>Kruger National Park</h1>
+				<p>Elephants, lions and giraffes surely don't roam the city streets, but nature and animals are never
+					too far away.</p>
+			</div>
+		</div>
+		<div class="section three">
+			<div class="content">
+				<h1>The Cape Winelands</h1>
+				<p>In the winelands you will be immersed on the worlds most scenic vineyards, flanked by striking
+					mountains, cobalt seas, and lush green valleys.</p>
+			</div>
+		</div>
+		<div class="section four">
+			<div class="content">
+				<h1>diamonds</h1>
+				<p>The biggest Diamond in the world, the Cullinan Diamond, was discovered in the Premier Mine by
+					Cullinan
+					Diamond</p>
+			</div>
+		</div>
+		<div class="section five">
+			<div class="content">
+				<h1>Table Mountain</h1>
+				<p>One of the world's oldest mountains, this 240-million year old monolith is home to more than 2000
+					species
+					of endemic plants</p>
+			</div>
+		</div>
+	</div>
+
+	</div>
+
+
+	<script>
+		// selecting all sections with class of section
+		const sections = document.querySelectorAll(".section");
+		const content = document.querySelectorAll(".content");
+
+		// Foreach section when clicked
+		sections.forEach((section) => {
+			section.addEventListener("click", () => {
+
+				// remove active class from all another section and
+				// add it to the selected section
+				sections.forEach((section) => {
+					section.classList.remove("active");					
+				});
+				section.classList.add("active");
+			});
+		});
+	</script>
+</body>
+
+</html>
