@@ -1,4 +1,4 @@
-```
+
 Classic snake game :snake:
 
 The objective is simple: Walk without hitting anything and absorb/capture the square that appears on the screen, thus, you will gain points and increase in size.
@@ -12,4 +12,3 @@ Avoid the edges, bumping into them will be game over.
 When it collides with any part of your body, the game is also over. When this happens, a warning message will appear. You can start over and try to beat your previous record.
 
 Have fun playing! :smiley:
-```
