@@ -33,7 +33,7 @@ const CoinTable = () => {
     <div className='mt-4 '>
       <h1 className='text-center text-[2.1rem] font-montserrat'>Cryptocurrency Prices by Market Cap</h1>
     </div>
-    <input type="text" className='bg-primaryBg border border-[#777777] w-full mt-4 h-[3.3rem] rounded px-4 placeholder:text-[#b4b4b4] placeholder:italic outline-none focus:border-white' placeholder='Search For a Cryptocurrency'/>
+    <input onChange={e => setSearch(e.target.value)} type="text" className='bg-primaryBg border border-[#777777] w-full mt-4 h-[3.3rem] rounded px-4 placeholder:text-[#b4b4b4] placeholder:italic outline-none focus:border-white' placeholder='Search For a Cryptocurrency'/>
     <div className='w-full h-14 bg-accent mt-6 rounded-t flex text-black font-semibold font-montserrat sm:text-sm text-[0.7rem] '>
       <div className=' sm:w-[40%] w-[25%]  h-full flex items-center  sm:pl-20 pl-6'>
         <h1>Coin</h1>

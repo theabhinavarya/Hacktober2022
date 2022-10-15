@@ -5,7 +5,7 @@ import CoinTable from "./components/CoinTable"
 function App() {
 
   return (
-    <div className=" h-[53rem] w-full bg-primaryBg text-white">
+    <div className=" min-h-screen w-full bg-primaryBg text-white">
       <Header/>
       <CoinContext.Provider value={{}}>
         <CoinTable />
