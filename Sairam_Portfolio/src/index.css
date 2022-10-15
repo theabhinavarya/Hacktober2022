@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+  font-family: 'Times New Roman', Times, serif;
+  scroll-behavior: smooth;
+
+}
+body{
+    background-color: #00091a;
+    color: white;
+}
+
+.btn-primary{
+  @apply bg-cyan-600 font-semibold font-sans text-white md:mx-0 mx-auto rounded-full py-3 px-6 flex items-center gap-2
+}
+
+input,textarea{
+  @apply bg-gray-700 outline-none rounded-lg p-3
+}
+
+::placeholder{
+  @apply text-lg
+}
+
+::selection{
+  @apply bg-cyan-600;
+}
+
+::-webkit-scrollbar{
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-track{
+  background-color: #00091a;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: white;
+  border-radius: 1rem;
+  background-clip: content-box;
+}
