@@ -1,0 +1,313 @@
+/* General */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 0.875rem;
+    line-height: 1.4;
+    color: #000;
+    background-color: #1c1c1c;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 500ms;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+button img,
+p img {
+    display: inline;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background-color: #fff;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+input,
+input::placeholder {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 500;
+    font-size: 0.875rem;
+    color: #6b7280;
+}
+
+input:focus-visible {
+    outline: none;
+}
+
+input[type='search']::-webkit-search-decoration,
+input[type='search']::-webkit-search-cancel-button,
+input[type='search']::-webkit-search-results-button,
+input[type='search']::-webkit-search-results-decoration {
+    -webkit-appearance: none;
+}
+
+/* Typography */
+h1,
+h5 {
+    font-family: 'Limelight', cursive;
+    margin: 0;
+    color: #fff;
+}
+
+h1 a:hover,
+h1 a:focus,
+h5 a:hover,
+h5 a:focus {
+    color: #d4a437;
+}
+
+h3,
+h4 {
+    margin: 0.5em 0;
+    font-size: 1.125rem;
+}
+
+h1 {
+    font-size: 2.6875rem;
+}
+
+h3 {
+    font-weight: 500;
+}
+
+h4 {
+    color: #dfdddd;
+    font-weight: 700;
+}
+
+h5,
+p {
+    font-size: 0.875rem;
+}
+
+p {
+    margin: 0.5em 0;
+    color: #6b7280;
+}
+
+/* Homepage */
+header,
+main {
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+    header,
+    main {
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 800px) {
+    header,
+    main {
+        max-width: 100%;
+    }
+}
+
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+}
+/* Header */
+header {
+    background-image: url('../images/header-img.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 6em 0;
+    position: relative;
+}
+
+.heading-flex {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    position: absolute;
+    width: 90%;
+    bottom: -1.5em;
+}
+
+form input {
+    padding: 1em 0;
+    border: none;
+    width: 80%;
+    border-top: 1px solid #d1d5db;
+    border-bottom: 1px solid #d1d5db;
+}
+
+form span {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    width: 5%;
+    border: 1px solid #d1d5db;
+    border-right: none;
+}
+
+form button {
+    border: 1px solid #d1d5db;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    width: 15%;
+    background-color: #f9fafb;
+    color: #374151;
+    transition: 500ms;
+}
+
+form button:hover,
+form button:focus {
+    background-color: #d4a437;
+    color: #fff;
+    border-color: #d4a437;
+}
+
+/* Main */
+main {
+    background-color: #fff;
+    min-height: calc(70vh - 10em);
+    padding: 4em 0;
+}
+
+#defaultSect {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 4em auto;
+}
+
+#noDataSect {
+    text-align: center;
+    margin: 6em auto;
+}
+
+.movieData {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em 0;
+    border-bottom: 1.5px solid #e5e7eb;
+}
+
+.moviePoster {
+    width: 20%;
+    object-fit: cover;
+}
+
+.movieDetails {
+    width: 70%;
+}
+
+@media (max-width: 600px) {
+    .moviePoster {
+        width: 25%;
+    }
+
+    .movieDetails {
+        width: 65%;
+    }
+}
+
+.movieHeading {
+    display: flex;
+    align-items: center;
+}
+
+.movieRate {
+    margin-left: 1.2em;
+    font-size: 0.75rem;
+    color: #111827;
+}
+
+.movieInfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+}
+
+.movieInfo p,
+.movieInfo .addBtn,
+.movieInfo .removeBtn {
+    font-size: 0.75rem;
+    color: #111827;
+}
+
+.addBtn,
+.removeBtn {
+    display: flex;
+    align-items: center;
+    transition: 500ms;
+}
+
+.addBtn:hover,
+.addBtn:focus,
+.removeBtn:hover,
+.removeBtn:focus {
+    color: #d4a437;
+}
+
+.addBtn img,
+.removeBtn img {
+    margin-bottom: 0.2em;
+}
+
+.addBtn span,
+.removeBtn span {
+    margin-left: 0.6em;
+    font-weight: 700;
+}
+
+.movieSub {
+    width: 85%;
+}
+
+@media (max-width: 600px) {
+    .movieInfo,
+    .movieSub {
+        width: 100%;
+    }
+}
+
+.addToWatchlist {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.addToWatchlist p {
+    margin: 0.2em 0 0 0.5em;
+    color: #363636;
+    font-weight: 700;
+    transition: 500ms;
+}
+
+.addToWatchlist p:hover,
+.addToWatchlist p:focus {
+    color: #d4a437;
+}
