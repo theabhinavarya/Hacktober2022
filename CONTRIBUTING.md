@@ -5,7 +5,7 @@
 **2.**  Clone your forked copy of the project.
 
 ```
-git clone --depth 1 https://github.com/<your_name>/Hacktober2021.git
+git clone --depth 1 https://github.com/<your_name>/Hacktober2022.git
 ```
 
 **3.** Navigate to the project directory :file_folder: .
@@ -18,7 +18,7 @@ cd Hacktober2021
 **4.** Add a reference(remote) to the original repository.
 
 ```
-git remote add upstream https://github.com/anjali1102/Hacktober2021.git
+git remote add upstream https://github.com/anjali1102/Hacktober2022.git
 ```
 
 **5.** Check the remotes for this repository.
@@ -56,9 +56,9 @@ git commit -m "Relevant message"
 git push -u origin <your_branch_name>
 ```
 
-**12.** To create a pull request, click on `compare and pull requests`. Please ensure you compare your feature branch to the desired branch of the repo you are suppose to make a PR to.
-**13.** Add appropriate title and description to your pull request explaining your changes and efforts done.
+**12.** To create a pull request, click on `Compare and pull requests`. Please ensure you compare your feature branch to the desired branch of the repo you are suppose to make a PR to.
 
+**13.** Add appropriate title and description to your pull request explaining your changes and efforts done.
 
 **14.** Click on `Create Pull Request`.
 
