@@ -28,12 +28,14 @@ button {
     justify-content: center;
     align-items: center;
     transition: 0.4s;
+    box-shadow: 0 8px 16px 0 rgba(128,0,128,0.2), 0 6px 20px 0 rgba(128,0,128,0.19);
 
 }
 
 button:hover {
     background-color: rgba(214, 79, 214, 0.781);
     color: white;
+    box-shadow: 0 12px 16 px 0 rgba(214, 79, 214, 0.781), 0 17px 50px 0 rgba(245, 48, 192, 0.8);
 }
 
 button:hover>i {
