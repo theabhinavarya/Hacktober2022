@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FunPanda</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+
+        }
+        
+        .sun{
+            position: absolute ;
+            bottom:240px;
+            right:220px;
+            animation: zoom 3s infinite;
+        }
+        @keyframes zoom{
+            50%{transform: scale(0.8);}
+        }
+        body{
+            background-image: url(image/bamboo.png);
+            width:100%;
+            height: 100vh;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+        .body{
+            position: absolute;
+            top:510px;
+            left:780px;
+            width:80px;
+            height: 120px;
+            background-color: white;
+            border-radius: 30%;
+            border: 5px solid black;
+        }
+        .body:hover{
+            top:370px;
+        }
+        .head{
+            height: 90px;
+            width:110px;
+            border: 5px solid black;
+            border-radius: 50%;
+            background-color: white;
+            position: relative;
+            bottom: 30px;
+            right:20px;
+        }
+        .ear-l,.ear-r{
+            position: relative;
+            height:25px;
+            width: 40px;
+            background-color: black;
+            border-radius: 0px 0px 40px 40px;
+        }
+        .ear-l{
+            transform: rotate(145deg);
+            bottom: 13px;
+            right: 8px;
+        }
+        .ear-r{
+            transform: rotate(-145deg);
+            left:78px;
+            bottom:38px;
+        }
+        .eye-r,.eye-l{
+            position: relative;
+            width: 28px;
+            height: 33px;
+            background-color: black;
+            border-radius: 50%;
+            
+        }
+        .eye-l{
+            bottom:30px;
+            left:10px;
+            transform: rotate(25deg);
+        }
+        .eye-r{
+            bottom:63px;
+            left:72px;
+            transform: rotate(-25deg);
+        }
+        .eyeball{
+            position: relative;
+            top:8px;
+            left:7px;
+            height:14px;
+            width: 14px;
+            border-radius: 50%;
+            background-color: white;
+            animation: look 2s infinite;
+        }
+        @keyframes look{
+            25%{left:5px;}
+            75%{left:9px;}
+        }
+        .nose{
+            position: relative;
+            height: 8px;
+            width: 15px;
+            background-color: black;
+            border-radius: 15px;
+            bottom:65px;
+            left:48px;
+        }
+        .hand-l,.hand-r{
+            position: relative;
+            width: 25px;
+            height: 43px;
+            background-color: black;
+            border-radius: 30px;
+        }
+        .hand-l{
+            transform: rotate(90deg);
+            bottom:28px;
+            right: 13px;
+            animation:wave 3s infinite;
+            transform-origin: top;
+        }
+        @keyframes wave{
+            50%{transform: rotate(120deg);}
+        }
+        .hand-r{
+            transform: rotate(-90deg);
+            bottom: 96px;
+            left:89px;
+        }
+        .leg-l,.leg-r{
+            position: relative;
+            background-color: black;
+            width: 17px;
+            height: 25px;
+            border-radius: 0 0 30px 30px;
+            
+        }
+        .leg-l{
+            bottom:65px;
+            left:15px;
+        }
+        .leg-r{
+            bottom:90px;
+            left:49px;
+        }
+        .shadow{
+            position: relative;
+            background-color: rgba(0, 0, 0, 0.2);
+            height: 30px;
+            width:100px;
+            border-radius: 50%;
+            bottom:105px;
+            right:10px;
+        }
+    </style>
+
+</head>
+<body>
+        <div class="sun">
+            <img src="image/sun.png" alt="">
+        </div>
+
+    <div class='body'>
+        <div class="head">
+            <div class="ear-l"></div>
+            <div class="ear-r"></div>
+            <div class="eye-l">
+                <div class="eyeball"></div>
+            </div>
+            <div class="eye-r">
+                <div class="eyeball"></div>
+            </div>
+            <div class="nose"></div>
+        </div>
+        <div class="hand-l"></div>
+        <div class="hand-r"></div>
+        <div class="leg-l"></div>
+        <div class="leg-r"></div>
+        <div class="shadow"></div>
+    </div>
+
+    
+    
+</body>
+</html>
