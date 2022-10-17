@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+  
+body
+{
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(135deg, #f8ffff 0, #d0ffff 25%, #9eebff 50%, #68cbe8 75%, #31b2d8 100%);
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 20vh;
+}
+.container .wrapper
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid black;
+    padding: 30px;
+    background-color: white;
+}
+.container .wrapper .main
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container .wrapper .main p
+{
+    font-size: 30px;
+}
+
+.container .wrapper .buttons
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .wrapper button
+{
+    margin: 10px 10px 5px 10px;
+    padding: 5px 10px;
+}

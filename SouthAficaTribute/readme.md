@@ -1,0 +1,2 @@
+This is tribute page for South Africa that highlights some of the interesting facts about South Africa
+![alt text](https://github.com/Lo-rraine/Hacktober2022/blob/SouthAfricatribute/SouthAficaTribute/images/tribute%20page.png)

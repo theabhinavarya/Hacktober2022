@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>password checker</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+        <div class="detail">
+            This program created to check wheather password is correct or not
+            this will check like gmail password .
+        </div>
+
+        <div class="inside_container">
+        <form action="">
+            <!-- <div class="labels ">
+            <label for="">Email</label>
+            <label for="">password</label>
+            </div> -->
+            <div class="input_fields">
+            <label for="">Email</label>
+            <input id="email" type="email" class="inputfield" placeholder="Enter your Email">
+            <label for="">Password</label>
+            <input id="pass" type="password" class="inputfield" onkeyup="keyDown()">
+            </div>
+        </form>
+        </div>
+
+        <div>
+        <button class="submitButton" id="check">Submit</button>
+        </div>
+        
+        <div class="passwordChecker">
+            <div id="capital" class="item"> Atleast one Capital letter </div>
+            <div id="small" class="item"> Atleast one small letter </div>
+            <div id="number" class="item"> Atleast one number is present </div>
+            <div id="specialSymbol" class="item"> Atleast one Special Symbol </div>
+            <div id="length" class="item"> Length should be 8 </div>
+        </div>
+
+    </div>
+    <script src="script.js">
+        
+    </script>
+</body>
+</html>
