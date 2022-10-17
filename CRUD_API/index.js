@@ -4,7 +4,9 @@ const bodyParser = require('body-parser')
 const mongoose=require('mongoose')
 const app=express();
 
-mongoose.connect('mongodb+srv://crud:crud@cluster0.5qslyt3.mongodb.net/?retryWrites=true&w=majority')
+
+// mongodb credensial
+
 
 const db=mongoose.connection
 
