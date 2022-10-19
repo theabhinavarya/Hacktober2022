@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@500&family=Festive&family=Inter&family=Lobster+Two:wght@400;700&family=Montserrat&family=Roboto+Mono&family=Sirin+Stencil&family=Splash&family=Stylish&family=Supermercado+One&family=Titillium+Web&family=Ubuntu:wght@300;500;700&display=swap');
+
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+body{
+    @include flexCenter;
+    height: 100vh;
+    width: 100vw;
+    background: radial-gradient(ellipse at top,blue,pink);
+    #bgc1{
+        width: 20rem;
+        height: 20rem;
+        background: greenyellow;
+        margin: 5rem 10rem;
+    }
+    #bgc2{
+        @extend #bgc1;
+        background: blueviolet
+    }
+    #bgc3{
+        @extend #bgc1;
+        background: red;
+    }
+
+    .main{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        @include flexCenter;
+        backdrop-filter: blur(3rem);
+
+        .pic{
+            position: absolute;
+            z-index: 2;
+            transition: all 0.3s ease-in;
+            transform-style: preserve-3d;
+            transform-origin: 0;
+            // box-shadow:inset 4px 4px 10px rgba(0,0,0,0.5);
+            border-radius: 0.5rem;
+            transform: skewY(10deg);
+            background: rgb(85, 85, 85);
+            img{
+                height: 20rem;
+                width: 20rem;
+                border-radius: 0.5rem;
+                opacity: 1;
+                backface-visibility: hidden;
+            }
+
+            &:hover{
+                transform: skewY(10deg) perspective(1000px) rotateY(-180deg);
+            }
+            // &:hover~.text{
+            //     opacity: 1;
+            // }
+        }
+
+        .text{
+            transition: all 0.3s ease-in;
+            position: absolute;
+            height: 20rem;
+            width: 20rem;
+            border-radius: 0.5rem;
+            opacity: 1;
+            padding: 1rem;
+            background:gray;
+            @include flexCenter;
+            flex-direction: column;
+            box-shadow: 4px 4px 10px gray;
+            transform-origin: 0;
+            transform: skewY(10deg);
+            box-shadow:inset 4px 4px 10px rgba(0,0,0,0.5);
+            h1{
+                margin-bottom: 1rem;
+                font-weight: 900;
+            }
+        }
+    }
+}
