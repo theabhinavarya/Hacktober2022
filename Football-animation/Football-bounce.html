@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<style>
+    
+    .bg{
+        background-image: url(soccer-goal-football-goalpost-net-stadium-background-game-sport-playground-vector-125189579.jpg);
+        width:100%;
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    .ball{
+        height: 100px;
+        width: 100px;
+        position: relative;
+        top: 580px;
+        left: 600px;
+        animation: bounce 2s infinite;
+        z-index: 1;
+
+    }
+    @keyframes bounce{
+        50%{top:480px;}
+    }
+    .gk{
+        
+        position: absolute;
+        top: 260px;
+        left: 400px;
+        animation: move 4s linear infinite;
+    }
+    @keyframes move{
+        0%{left:400px;}
+        25%{left:600px;}
+        50%{left:800px;}
+        75%{left: 600px;}
+        100%{left:400px;}
+    }
+</style>
+</head>
+<body class="bg">
+    <div class="ball">
+        <img src="football-removebg-preview.png" alt="A football" style="height:150px ; width:150px;">
+    </div>
+    <div class="gk">
+        <img src="gk-removebg-preview.png" alt="A football" style="height:350px ; width:250px;">
+    </div>
+
+</body>
+</html>
