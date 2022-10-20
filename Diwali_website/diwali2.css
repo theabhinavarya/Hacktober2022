@@ -249,3 +249,10 @@
 {
   background-color: #f23a87;
 }
+
+button{
+    padding: 10px;
+     border: 2px solid black;
+  border-radius: 25px !important;
+  overflow: hidden;
+}
